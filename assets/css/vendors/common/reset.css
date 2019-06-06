@@ -52,14 +52,6 @@ ul {
 }
 
 /*
-* o padding do botão é útil
-*/
-button,
-input[type="button"] {
-  border: 0;
-}
-
-/*
  * padding e border ficam para serem sobrescritos pelo estilo
  */
 fieldset {
