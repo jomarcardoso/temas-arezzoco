@@ -1,0 +1,29 @@
+::selection {
+  background: var(--colorGrayLight);
+}
+
+textarea:focus,
+input:focus,
+:not(input[type="button"]){
+  outline: 2px solid var(--colorPrimary);
+}
+
+/* formatação de texto padrão */
+html,
+button,
+input,
+select,
+textarea {
+  color: var(--colorText);
+  line-height: 1.4;
+}
+
+/* formatação dos headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--colorTitle);
+}
