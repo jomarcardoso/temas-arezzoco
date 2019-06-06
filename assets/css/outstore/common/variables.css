@@ -3,8 +3,8 @@
   --colorGray:  hsl(34, 10%, 28%); /* #4e4840 */
   --colorGrayDarker:  hsl(34, 10%, 23%); /* darken(--colorGray, 5%) */
   --colorGrayDark: var(--colorGray);
-  --colorGrayLight: hsl(34, 10%, 80%); /* lighten(--colorGray, 56%) */
-  --colorGrayLighter: hsl(34, 10%, 90%); /* lighten(--colorGray, 71%) */
+  --colorGrayLight: hsl(34, 10%, 88%); /* lighten(--colorGray, 56%) */
+  --colorGrayLighter: hsl(34, 10%, 96%); /* lighten(--colorGray, 71%) */
 
   /* cores do tema */
   --colorPrimary: #e74d50;
