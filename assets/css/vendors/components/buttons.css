@@ -1,0 +1,9 @@
+.Button,
+.Button--large {
+  cursor: pointer;
+}
+
+.Button:disabled,
+.Button--large:disabled {
+  cursor: not-allowed;
+}

@@ -1,10 +1,10 @@
 :root {
   /* escala de cinza */
-  --colorGray:  hsl(34, 10%, 28%); /* #4e4840 */
-  --colorGrayDarker:  hsl(34, 10%, 23%); /* darken(--colorGray, 5%) */
-  --colorGrayDark: var(--colorGray);
-  --colorGrayLight: hsl(34, 10%, 88%); /* lighten(--colorGray, 56%) */
-  --colorGrayLighter: hsl(34, 10%, 96%); /* lighten(--colorGray, 71%) */
+  --colorGrayDarker:  hsl(34, 10%, 18%);
+  --colorGrayDark: hsl(34, 10%, 28%);
+  --colorGray:  hsl(34, 10%, 72%);
+  --colorGrayLight: hsl(34, 10%, 88%);
+  --colorGrayLighter: hsl(34, 10%, 96%);
 
   /* cores do tema */
   --colorPrimary: #e74d50;
@@ -12,7 +12,7 @@
   --colorDanger: #ff0000;
 
   /* apelidos */
-  --colorTitle: var(--colorGrayDarker);
+  --colorHeading: var(--colorGrayDarker);
   --colorText: var(--colorGrayDark);
 }
 

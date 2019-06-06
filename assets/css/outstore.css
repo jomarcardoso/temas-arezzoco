@@ -1,5 +1,13 @@
+/* vendors */
 @import './vendors/common/reset.css';
+@import './vendors/components/buttons.css';
+
+/* commons */
 @import './outstore/common/variables.css';
 @import './outstore/common/sets.css';
 @import './outstore/common/fonts.css';
+
+/* componentes */
+@import './outstore/components/headings.css';
+@import './outstore/components/buttons.css';
 
