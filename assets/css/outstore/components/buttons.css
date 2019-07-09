@@ -1,37 +1,40 @@
-.Button,
-.Button--large,
-.Button--small {
-  background-color: var(--colorPrimary);
-  border: 0;
-  color: white;
+.Button {
   font-weight: bold;
-}
-
-.Button,
-.ButtonSecondary {
-  height: 44px;
-}
-
-.Button--large,
-.ButtonSecondary--large {
-  height: 50px;
-}
-
-.Button--small,
-.ButtonSecondary--small {
-  height: 38px;
-}
-
-.ButtonSecondary,
-.ButtonSecondary--large,
-.ButtonSecondary--small {
-  background-color: var(--colorGrayDarker);
   border: 0;
   color: white;
+  background-color: var(--colorPrimary);
+  height: 42px;
 }
 
-.Button:disabled,
-.Button--large:disabled,
-.Button--small:disabled {
+.Button:disabled {
   background-color: var(--colorGray);
 }
+
+.Button--large {
+  height: 48px;
+}
+
+.Button--small {
+  height: 36px;
+}
+
+.Button--primary {
+  background-color: var(--colorGrayDarker);
+}
+
+.Button--outline {
+  background-color: transparent;
+  border: 1px solid currentColor;
+  color: var(--colorPrimary);
+}
+
+.Button--outline.Button--primary {
+  color: var(--colorGrayDarker);
+}
+
+.Button--outline:disabled {
+  color: var(--colorGray);
+  border-color: currentColor;
+  background-color: transparent;
+}
+
