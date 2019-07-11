@@ -16,13 +16,16 @@ document.addEventListener('DOMContentLoaded', () => {
     iDocument.querySelector('body').classList.add('sg-Main-container');
   }
 
-  function createNav() {
-    IndexDetector(iDocument);
+  function createNavList() {
+    const listIndex = IndexDetector(iDocument);
+    console.log(listIndex)
+
+
   }
 
   elStyleGuideWrapper.addEventListener('load', () => {
     iDocument = elStyleGuideWrapper.contentDocument;
     addStyleToIframe();
-    createNav();
+    createNavList();
   });
 });

@@ -18,7 +18,7 @@ export default function(el = document) {
   function verifyPosition(item) {
     return list.reduce((previousItem, currentItem) => {
       // console.log(item.position, previousItem.position)
-      if (item.position >= previousItem.position) {
+      if (item.position >= currentItem.position) {
         return currentItem;
       }
 
@@ -34,11 +34,11 @@ export default function(el = document) {
   elH3List.forEach((item, index) => {
     const la = layoutItem(item, index);
     const position = verifyPosition(la);
-    console.log(position)
-    list[position - 1].list.push(la)
+    // console.log(position)
+    list[position].list.push(la)
     // list.push(layoutItem(item, index));
     // console.dir(item.offsetTop)
   });
 
-  console.log(list)
+  return list;
 }
