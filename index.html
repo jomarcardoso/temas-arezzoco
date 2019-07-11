@@ -3,10 +3,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Documentation</title>
+  <link rel="stylesheet" href="./style-guide/css/reset.css">
+  <link rel="stylesheet" href="./style-guide/css/main.css">
 </head>
-<body>
-  <h1>Guia de estilo</h1>
-  <iframe src="./outstore.html" frameborder="0"></iframe>
+<body class="sg-Wrapper">
+  <nav class="sg-Nav">
+    <ul class="sg-Nav-list">
+      <li class="sg-Nav-item">
+        <a href="#section-common">
+          Common
+        </a>
+      </li>
+      <ul class="sg-Nav-subList">
+        <li class="sg-Nav-subItem">
+          <a href="#section-variables">
+            Variables
+          </a>
+        </li>
+        <li class="sg-Nav-subItem">
+          <a href="#section-sets">
+            Sets
+          </a>
+        </li>
+        <li class="sg-Nav-subItem">
+          Typography
+        </li>
+      </ul>
+    </ul>
+    <ul class="sg-Nav-list">
+      <li class="sg-Nav-item">
+        Components
+      </li>
+      <ul class="sg-Nav-subList">
+        <li class="sg-Nav-subItem">
+          Buttons
+        </li>
+        <li class="sg-Nav-subItem">
+          Form
+        </li>
+      </ul>
+    </ul>
+  </nav>
+  <main class="sg-Main">
+    <iframe id="elStyleGuideWrapper" class="sg-Main-wrapper" src="./outstore.html" frameborder="0"></iframe>
+  </main>
+  <script type="module" src="./style-guide/js/index.js"></script>
 </body>
 </html>
