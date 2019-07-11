@@ -17,7 +17,6 @@ export default function(el = document) {
 
   function verifyPosition(item) {
     return list.reduce((previousItem, currentItem) => {
-      // console.log(item.position, previousItem.position)
       if (item.position >= currentItem.position) {
         return currentItem;
       }
@@ -26,18 +25,26 @@ export default function(el = document) {
     }).index;
   }
 
+  function createList() {
+    function addToList() {
+
+    }
+
+    ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'].reduce((previousItem, currentItem) => {
+      const headings = el.querySelectorAll(item);
+      if (!headings.length) return previousItem;
+      headings
+    }, []);
+  }
+
   elH2List.forEach((item, index) => {
     list.push(layoutItem(item, index));
-    // console.dir(item.offsetTop)
   });
 
   elH3List.forEach((item, index) => {
     const la = layoutItem(item, index);
     const position = verifyPosition(la);
-    // console.log(position)
-    list[position].list.push(la)
-    // list.push(layoutItem(item, index));
-    // console.dir(item.offsetTop)
+    list[position].list.push(la);
   });
 
   return list;

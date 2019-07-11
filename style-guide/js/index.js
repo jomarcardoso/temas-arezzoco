@@ -17,10 +17,24 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function createNavList() {
-    const listIndex = IndexDetector(iDocument);
-    console.log(listIndex)
+    function templateNavItem({ tagName, innerHTML, id }) {
+      return `
+        <li class="sg-Nav-item${tagName}">
+          <a href="#${id || ''}">
+            ${innerHTML}
+          </a>
+        </li>
+      `;
+    }
 
+    const listIndex = iDocument.querySelectorAll('h1, h2, h3, h4, h5, h6');
+    const arrayIndex = Array.from(listIndex);
 
+    const navLayout = arrayIndex.reduce((previousValue, currentvalue) => {
+      return previousValue.concat(templateNavItem(currentvalue));
+    }, '');
+
+    elStyleGuideNav.innerHTML = navLayout;
   }
 
   elStyleGuideWrapper.addEventListener('load', () => {
