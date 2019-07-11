@@ -3,62 +3,118 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Outstore - Guia de estilo</title>
+  <link rel="stylesheet" href="./style-guide/css/main.css">
   <link rel="stylesheet" href="./assets/css/outstore.css">
 </head>
-<body>
-  <h2 style="text-align: center; padding: 20px; background-color: goldenrod; margin-bottom: 20px">Pure HTML</h2>
-  <h1>h1</h1>
-  <h2>h2</h2>
-  <h3>h3</h3>
-  <h4>h4</h4>
-  <h5>h5</h5>
-  <h6>h6</h6>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis labore nulla voluptatum quas ipsum, hic doloremque tempore sunt reprehenderit laboriosam saepe, quaerat, eos sit a nihil. Optio sapiente rem dolorum.</p>
-  <input type="text">
-  <button>button</button>
-  <h2 style="text-align: center; padding: 20px; background-color: goldenrod; margin: 20px 0">CSS Components</h2>
-  <h1 class="Heading1">.Heading1</h1>
-  <h2 class="Heading2">.Heading2</h2>
-  <h3 class="Heading3">.Heading3</h3>
-  <h4 class="Heading4">.Heading4</h4>
-  <p class="Paragraph">.Paragraph: Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis labore nulla voluptatum quas ipsum, hic doloremque tempore sunt reprehenderit laboriosam saepe, quaerat, eos sit a nihil. Optio sapiente rem dolorum.</p>
-  <input class="Input" type="text">
-  <hr>
-  <button class="Button Button--large">.Button.Button--large</button>
-  <button class="Button Button--large" disabled>.Button.Button--large:disabled</button>
-  <hr>
-  <button class="Button">.Button</button>
-  <button class="Button" disabled>.Button:disabled</button>
-  <hr>
-  <button class="Button Button--small">.Button.Button--small</button>
-  <button class="Button Button--small" disabled>.Button.Button--small:disabled</button>
-  <hr>
-  <button class="Button Button--primary Button--large">.Button.Button--primary.Button--large</button>
-  <button class="Button Button--primary Button--large" disabled>.Button.Button--primary.Button--large:disabled</button>
-  <hr>
-  <button class="Button Button--primary">.Button.Button--primary</button>
-  <button class="Button Button--primary" disabled>.Button.Button--primary:disabled</button>
-  <hr>
-  <button class="Button Button--primary Button--small">.Button.Button--primary.Button--small</button>
-  <button class="Button Button--primary Button--small" disabled>.Button.Button--primary.Button--small:disabled</button>
-  <hr>
-  <button class="Button Button--outline Button--large">Button.Button--outline.Button--large</button>
-  <button class="Button Button--outline Button--large" disabled>Button.Button--outline.Button--large:disabled</button>
-  <hr>
-  <button class="Button Button--outline">.Button.Button--outline</button>
-  <button class="Button Button--outline" disabled>.Button.Button--outline:disabled</button>
-  <hr>
-  <button class="Button Button--outline Button--small">.Button.Button--outline.Button--small</button>
-  <button class="Button Button--outline Button--small" disabled>.Button.Button--outline.Button--small:disabled</button>
-  <hr>
-  <button class="Button Button--outline Button--primary Button--large">.Button.Button--outline.Button--primary.Button--large</button>
-  <button class="Button Button--outline Button--primary Button--large" disabled>.Button.Button--outline.Button--primary.Button--large:disabled</button>
-  <hr>
-  <button class="Button Button--outline Button--primary">.Button.Button--outline.Button--primary</button>
-  <button class="Button Button--outline Button--primary" disabled>.Button.Button--outline.Button--primary:disabled</button>
-  <hr>
-  <button class="Button Button--outline Button--primary Button--small">.Button.Button--outline.Button--primary.Button--small</button>
-  <button class="Button Button--outline Button--primary Button--small" disabled>.Button.Button--outline.Button--primary.Button--small:disabled</button>
+<body class="sg-Wrapper">
+  <nav class="sg-Nav">
+    <ul class="sg-Nav-list">
+      <li class="sg-Nav-item">
+        <a href="#section-common">
+          Common
+        </a>
+      </li>
+      <ul class="sg-Nav-subList">
+        <li class="sg-Nav-subItem">
+          <a href="#section-variables">
+            Variables
+          </a>
+        </li>
+        <li class="sg-Nav-subItem">
+          <a href="#section-sets">
+            Sets
+          </a>
+        </li>
+        <li class="sg-Nav-subItem">
+          Typography
+        </li>
+      </ul>
+    </ul>
+    <ul class="sg-Nav-list">
+      <li class="sg-Nav-item">
+        Components
+      </li>
+      <ul class="sg-Nav-subList">
+        <li class="sg-Nav-subItem">
+          Buttons
+        </li>
+        <li class="sg-Nav-subItem">
+          Form
+        </li>
+      </ul>
+    </ul>
+  </nav>
+  <main class="sg-Main">
+    <div class="sg-Main-container">
+      <section class="sg-Section">
+        <h2 id="section-common">Common</h2>
+        <h3 id="section-variables">Variables</h3>
+        <h3 id="section-sets">Sets</h3>
+      </section>
+      <section class="arz-Section">
+        <h2 class="arz-Section-header">Pure HTML</h2>
+        <article class="arz-Section-main">
+          <h1>h1</h1>
+          <h2>h2</h2>
+          <h3>h3</h3>
+          <h4>h4</h4>
+          <h5>h5</h5>
+          <h6>h6</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis labore nulla voluptatum quas ipsum, hic doloremque tempore sunt reprehenderit laboriosam saepe, quaerat, eos sit a nihil. Optio sapiente rem dolorum.</p>
+          <input type="text">
+          <button>button</button>
+        </article>
+      </section>
+      <section class="arz-Section">
+        <h2 class="arz-Section-header">CSS Components</h2>
+        <h3 class="arz-Section-header2">Typography</h3>
+        <h1 class="Heading1">.Heading1</h1>
+        <h2 class="Heading2">.Heading2</h2>
+        <h3 class="Heading3">.Heading3</h3>
+        <h4 class="Heading4">.Heading4</h4>
+        <p class="Paragraph">.Paragraph: Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis labore nulla voluptatum quas ipsum, hic doloremque tempore sunt reprehenderit laboriosam saepe, quaerat, eos sit a nihil. Optio sapiente rem dolorum.</p>
+        <h3 class="arz-Section-header2">Form</h3>
+        <input class="Input" type="text">
+        <h3 class="arz-Section-header2">Buttons</h3>
+        <button class="Button Button--large">.Button.Button--large</button>
+        <button class="Button Button--large" disabled>.Button.Button--large:disabled</button>
+        <hr>
+        <button class="Button">.Button</button>
+        <button class="Button" disabled>.Button:disabled</button>
+        <hr>
+        <button class="Button Button--small">.Button.Button--small</button>
+        <button class="Button Button--small" disabled>.Button.Button--small:disabled</button>
+        <hr>
+        <button class="Button Button--primary Button--large">.Button.Button--primary.Button--large</button>
+        <button class="Button Button--primary Button--large" disabled>.Button.Button--primary.Button--large:disabled</button>
+        <hr>
+        <button class="Button Button--primary">.Button.Button--primary</button>
+        <button class="Button Button--primary" disabled>.Button.Button--primary:disabled</button>
+        <hr>
+        <button class="Button Button--primary Button--small">.Button.Button--primary.Button--small</button>
+        <button class="Button Button--primary Button--small" disabled>.Button.Button--primary.Button--small:disabled</button>
+        <hr>
+        <button class="Button Button--outline Button--large">Button.Button--outline.Button--large</button>
+        <button class="Button Button--outline Button--large" disabled>Button.Button--outline.Button--large:disabled</button>
+        <hr>
+        <button class="Button Button--outline">.Button.Button--outline</button>
+        <button class="Button Button--outline" disabled>.Button.Button--outline:disabled</button>
+        <hr>
+        <button class="Button Button--outline Button--small">.Button.Button--outline.Button--small</button>
+        <button class="Button Button--outline Button--small" disabled>.Button.Button--outline.Button--small:disabled</button>
+        <hr>
+        <button class="Button Button--outline Button--primary Button--large">.Button.Button--outline.Button--primary.Button--large</button>
+        <button class="Button Button--outline Button--primary Button--large" disabled>.Button.Button--outline.Button--primary.Button--large:disabled</button>
+        <hr>
+        <button class="Button Button--outline Button--primary">.Button.Button--outline.Button--primary</button>
+        <button class="Button Button--outline Button--primary" disabled>.Button.Button--outline.Button--primary:disabled</button>
+        <hr>
+        <button class="Button Button--outline Button--primary Button--small">.Button.Button--outline.Button--primary.Button--small</button>
+        <button class="Button Button--outline Button--primary Button--small" disabled>.Button.Button--outline.Button--primary.Button--small:disabled</button>
+      </section>
+    </div>
+  </main>
+  <script type="module" src="./style-guide/js/index.js"></script>
 </body>
 </html>

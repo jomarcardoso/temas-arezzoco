@@ -1,0 +1,52 @@
+:root {
+  --colorPrimary: brown;
+  --colorDark: hsl(210, 10%, 20%);
+  --colorDarker: hsl(210, 10%, 23%);
+}
+
+.sg-Main,
+.sg-Nav {
+  padding: 15px;
+}
+
+.sg-Nav-list {
+  padding: 5px 0;
+}
+
+.sg-Nav-subList {
+  padding-left: 10px;
+}
+
+.sg-Nav-item {
+  padding: 5px 10px;
+  color: var(--colorDarker);
+  font-weight: bold;
+}
+
+.sg-Nav-subItem {
+  padding: 5px 10px;
+  color: var(--colorDark);
+}
+
+.sg-Main-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .sg-Wrapper {
+    display: flex;
+    height: 100%;
+    scroll-behavior: smooth;
+  }
+
+  .sg-Main,
+  .sg-Nav {
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  .sg-Main {
+    flex: 1;
+  }
+}
