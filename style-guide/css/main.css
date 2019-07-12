@@ -1,3 +1,5 @@
+@import './vendors/dracula.css';
+
 :root {
   --saColorPrimary: gold;
   --saColorDark: hsl(210, 32%, 18%);
@@ -49,16 +51,19 @@
   height: 100%;
 }
 
-.sg-Heading {
+pre,
+.sg-Heading,
+.sg-Example {
   margin-bottom: 20px;
 }
 
 pre {
-  background: var(--saColorDarker);
-    color: var(--saColorPrimary);
-    border-radius: 4px;
-    line-height: 1.4;
-    padding: 15px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+code.hljs {
+  padding: 15px;
 }
 
 @media (min-width: 768px) {

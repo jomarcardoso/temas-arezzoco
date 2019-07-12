@@ -22,3 +22,7 @@ Algumas regras se seguidas podem ajudar:
 - configurações iniciais
 - componentes
 
+## Bibliotecas utilizadas
+
+- [highlight.js](https://highlightjs.org/)
+

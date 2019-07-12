@@ -54,9 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function createNodesByCodes() {
-    // const iPres = iDocument.querySelectorAll('pre');
-    // const arrayPres = Array.from(iPres);
-
     const iTemplates = iDocument.querySelectorAll('script[type="template"]');
     const arrayTemplates = Array.from(iTemplates);
     console.log(arrayTemplates)
@@ -64,11 +61,17 @@ document.addEventListener('DOMContentLoaded', () => {
     function makeCodesByTags(el) {
       const elContent = el.innerHTML;
       const text = elContent.replace(/\&/g, '$amp').replace(/\</g, '&lt').replace(/\>/g, '&gt');
-      // const iPre = iDocument.createElement('pre').innerHTML = text;
-      const iPre = `<pre>${text}</pre>`
+
+      const padding = text.search(/(?!\s)/) - 1;
+      const trimText = text.replace(new RegExp(`\\n(\\s{${padding}})`, 'g'), '\n').trim();
+      const iPre = `<pre><code>${trimText}</code></pre>`;
       el.insertAdjacentHTML('afterend', iPre);
-      el.insertAdjacentHTML('beforebegin', elContent);
-      // el.innerHTML = text;
+      el.insertAdjacentHTML('beforebegin', `<div class="sg-Example">${elContent}</div>`);
+
+      iDocument.querySelectorAll('pre code').forEach((block) => {
+        console.log(hljs.highlightBlock)
+        hljs.highlightBlock(block);
+      });
     }
 
     arrayTemplates.forEach(makeCodesByTags)
