@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const anchors = document.querySelectorAll('a[href*="#"]');
       anchors.forEach((anchor) => {
         anchor.addEventListener('click', ({ currentTarget: { hash } }) => {
-          // console.dir(currentTarget)
           const target = iDocument.querySelector(hash);
           scrollTo(target.offsetTop)
         });
@@ -48,11 +47,31 @@ document.addEventListener('DOMContentLoaded', () => {
       return previousValue.concat(templateNavItem(currentvalue));
     }, '');
 
-    console.log(arrayIndex)
     arrayIndex.forEach(addClass)
 
     elStyleGuideNav.innerHTML = navLayout;
     bindScrollEvents();
+  }
+
+  function createNodesByCodes() {
+    // const iPres = iDocument.querySelectorAll('pre');
+    // const arrayPres = Array.from(iPres);
+
+    const iTemplates = iDocument.querySelectorAll('script[type="template"]');
+    const arrayTemplates = Array.from(iTemplates);
+    console.log(arrayTemplates)
+
+    function makeCodesByTags(el) {
+      const elContent = el.innerHTML;
+      const text = elContent.replace(/\&/g, '$amp').replace(/\</g, '&lt').replace(/\>/g, '&gt');
+      // const iPre = iDocument.createElement('pre').innerHTML = text;
+      const iPre = `<pre>${text}</pre>`
+      el.insertAdjacentHTML('afterend', iPre);
+      el.insertAdjacentHTML('beforebegin', elContent);
+      // el.innerHTML = text;
+    }
+
+    arrayTemplates.forEach(makeCodesByTags)
   }
 
   elStyleGuideWrapper.addEventListener('load', () => {
@@ -60,5 +79,6 @@ document.addEventListener('DOMContentLoaded', () => {
     iBody = iDocument.querySelector('body');
     addStyleToIframe();
     createNavList();
+    createNodesByCodes();
   });
 });

@@ -1,7 +1,7 @@
 :root {
-  --colorPrimary: brown;
-  --colorDark: hsl(210, 10%, 20%);
-  --colorDarker: hsl(210, 10%, 23%);
+  --saColorPrimary: gold;
+  --saColorDark: hsl(210, 32%, 18%);
+  --saColorDarker: 	hsl(210, 32%, 15%);
 }
 
 .sg-Nav,
@@ -15,7 +15,7 @@
 
 .sg-Nav-item {
   padding: 5px 10px;
-  color: var(--colorDarker);
+  color: var(--saColorDarker);
 }
 
 .sg-Nav-item.sg-Nav-item--H1 {
@@ -51,6 +51,14 @@
 
 .sg-Heading {
   margin-bottom: 20px;
+}
+
+pre {
+  background: var(--saColorDarker);
+    color: var(--saColorPrimary);
+    border-radius: 4px;
+    line-height: 1.4;
+    padding: 15px;
 }
 
 @media (min-width: 768px) {
