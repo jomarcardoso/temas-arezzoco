@@ -1,0 +1,113 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    :root {
+      --lightgreen: lightgreen;
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <h1>Guia de estilos do Guia de estilos</h1>
+  <p>
+    Criei essa ferramenta para ser uma forma simples de criar um guia de estilos.
+    Pareceu útil usar ela mesmo para se explicar.
+  </p>
+  <h2>Criação</h2>
+  <p>
+    Comece criando um arquivo HTML e importe-o no arquivo "index.html"
+  </p>
+
+  <template data-render="code">
+    <main class="sg-Main">
+      <iframe name="iframe-main" id="elStyleGuideWrapper" class="sg-Main-wrapper" src="./style-guide.html" frameborder="0"></iframe>
+    </main>
+  </template>
+
+  <h2>Amostras de códigos</h2>
+  <p>
+    As amostras de código usam a biblioteca "Highligt.js" para fazer o "syntax hightlight".
+    Os códigos são escritos dentro de uma script do tipo template, ou uma tag template mesmo.
+  </p>
+  <template data-render="code">
+    <template>
+      <!-- seu código aqui-->
+    </template>
+  </template>
+  <p>
+    <b>Obs: </b>Na amostra acima eu usei o atributo [<code>data-render="code"</code>]
+    para evitar de renderizar o html.
+  </p>
+  <template data-render="code">
+      <template data-render="code">
+        <template>
+          <!-- seu código aqui-->
+        </template>
+      </template>
+    </template>
+  <p>
+    Há uma detecção automática se o conteúdo trata-se de HTML e então renderiza
+    acima da amostra.
+  </p>
+  <p>
+    Segundo a documentação do Highligt.js se a ferramenta não conseguiu indentificar automaticamente
+    a sintaxe pode-se forçar isso incluindo a classe correspondente. Como fazemos essa comunicação
+    passamos essa classe através de um data-class.
+  </p>
+  <template data-class="css">
+    /**
+     * @description teste
+     */
+    const oi = 'oi';
+  </template>
+  <template data-class="Javascript">
+    /**
+     * @description teste
+     */
+    const oi = 'oi';
+  </template>
+  <p>
+    Forcei a amostra de cima colocando seu data-class como "css", não achei um exemplo bom para testar isso,
+    espero que você também não precise usar 😉.
+  </p>
+
+  <h2>Componentes</h2>
+  <h3>Caixa de cor</h3>
+  <template>
+    <div class="sg-ColorBox" data-color="tomato">
+      Tomato
+    </div>
+
+    <div class="sg-ColorBox" data-color="teal">
+      Teal
+    </div>
+  </template>
+
+  <p>
+    Uma coisa boa é que você pode colocar o nome da variável CSS com a cor escolhida.
+  </p>
+
+  <template>
+    <div class="sg-ColorBox" data-color="--lightgreen">
+      --lightgreen
+    </div>
+  </template>
+
+  <h2>Tecnollgias suportadas</h2>
+  <ol>
+    <li>HTML/XML</li>
+    <li>CSS</li>
+    <li>Javascript/JSON</li>
+  </ol>
+
+  <h2>Exemplos de uso</h2>
+  <ol>
+    <li>
+      <a href="./outstore.html">Outstore</a>
+    </li>
+  </ol>
+</body>
+</html>

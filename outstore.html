@@ -7,14 +7,40 @@
   <link rel="stylesheet" href="./assets/css/outstore.css">
 </head>
 <body>
-  <section class="sg-Section">
-    <h2 id="section-common">Common</h2>
-    <h3 id="section-variables">Variables</h3>
-    <script type="template">
+  <section>
+    <h2 id="section-common">Padrões</h2>
+    <p>
+      Esta seção existe em qualquer projeto, aqui é definido:
+    </p>
+    <ul>
+      <li>Variáveis</li>
+      <li>Configurações iniciais</li>
+    </ul>
+    <h3 id="section-variables">Variáveis</h3>
+    <h4 id="section-varibles-colors">Cores</h4>
+    <div class="sg-ColorBox" data-color="--colorPrimary">
+      --colorPrimary
+    </div>
+    <template>
       <button class="Button">
         .Button
       </button>
-    </script>
+
+      <button class="Button Button--primary">
+        .Button.Button--primary
+      </button>
+    </template>
+    <template>
+      .classe {
+        color: blue;
+      }
+
+      .classe2,
+      tag {
+        padding: 4px;
+        padding: 4px;
+      }
+    </template>
     <h3 id="section-sets">Sets</h3>
   </section>
   <section class="arz-Section">
