@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function addStyleToIframe() {
     const iLink = iDocument.createElement('link');
-    iLink.href= './style-guide/css/main.css';
+    iLink.href= './assets/css/main.css';
     iLink.rel = 'stylesheet';
 
     iDocument.querySelector('head').appendChild(iLink);
