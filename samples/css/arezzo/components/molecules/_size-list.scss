@@ -1,0 +1,30 @@
+.size-list {
+  display: flex;
+  min-height: 38px;
+
+  &__item {
+    border: 1px solid $color-grayLight;
+    display: flex;
+    align-items: center;
+    min-width: 38px;
+    justify-content: center;
+    font-weight: bold;
+    transition: .1s;
+
+    & ~ .size-list__item {
+      border-left: 0;
+    }
+  }
+
+  input[type="radio"] {
+    &:disabled + .size-list__item {
+      background-color: $color-grayLight;
+      color: $color-gray;
+    }
+
+    &:checked + .size-list__item {
+      background-color: $color-primary;
+      color: $color-secondary;
+    }
+  }
+}

@@ -2,12 +2,12 @@
   font-weight: bold;
   border: 0;
   color: white;
-  background-color: var(--colorPrimary);
+  background-color: var(--color-primary);
   height: 42px;
 }
 
 .Button:disabled {
-  background-color: var(--colorGray);
+  background-color: var(--color-gray);
 }
 
 .Button--large {
@@ -19,21 +19,21 @@
 }
 
 .Button--primary {
-  background-color: var(--colorGrayDarker);
+  background-color: var(--color-grayDarker);
 }
 
 .Button--outline {
   background-color: transparent;
   border: 1px solid currentColor;
-  color: var(--colorPrimary);
+  color: var(--color-primary);
 }
 
 .Button--outline.Button--primary {
-  color: var(--colorGrayDarker);
+  color: var(--color-grayDarker);
 }
 
 .Button--outline:disabled {
-  color: var(--colorGray);
+  color: var(--color-gray);
   border-color: currentColor;
   background-color: transparent;
 }

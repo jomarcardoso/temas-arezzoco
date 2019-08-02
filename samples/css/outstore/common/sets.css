@@ -1,11 +1,11 @@
 ::selection {
-  background: var(--colorGrayLight);
+  background: var(--colorgrayLight);
 }
 
 textarea:focus,
 input:focus,
 :not(input[type="button"]){
-  outline: 2px solid var(--colorPrimary);
+  outline: 2px solid var(--color-primary);
 }
 
 /* formatação de texto padrão */
@@ -14,7 +14,7 @@ button,
 input,
 select,
 textarea {
-  color: var(--colorText);
+  color: var(--color-text);
   line-height: 1.4;
   font-family: 'overpass';
 }
@@ -26,5 +26,5 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--colorHeading);
+  color: var(--color-heading);
 }

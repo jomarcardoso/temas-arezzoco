@@ -1,0 +1,106 @@
+/* escala de cinza */
+/* cores do tema */
+/**
+ * resets
+ * source: https://raw.githubusercontent.com/jomarcardoso/jo-CssResets/master/assets/css/resets.css
+ * cdn: https://min.gitcdn.link/
+ */
+@import 'https://min.gitcdn.link/repo/jomarcardoso/jo-CssResets/master/assets/css/resets.css';
+button:disabled,
+input:disabled {
+  cursor: not-allowed;
+}
+
+:root {
+  /* escala de cinza */
+  --color-grayDarker: #323232;
+  --color-grayDark: #454545;
+  --color-gray: #666;
+  --color-grayLight: #dddddd;
+  --color-grayLighter: #ededed;
+  /* cores do tema */
+  --color-primary: #000;
+  --color-success: #4C831B;
+  --color-danger: #E6013C;
+}
+
+.button {
+  border: 1px solid #000;
+  cursor: pointer;
+  color: #fff;
+  background-color: #000;
+  height: 42px;
+  width: 100%;
+  font-size: 20px;
+}
+
+.button--small {
+  height: 34px;
+  font-size: 16px;
+}
+
+.button--large {
+  font-size: 24px;
+  height: 50px;
+}
+
+.button--secondary {
+  color: #000;
+  background-color: #fff;
+}
+
+.button--outline {
+  background-color: transparent;
+  color: #000;
+}
+
+.button--outline.button--secondary {
+  color: #fff;
+  border-color: #fff;
+}
+
+.button:disabled {
+  background-color: #666;
+  border-color: #666;
+}
+
+.paragraph {
+  color: #666;
+}
+
+.title-container {
+  font-size: 30px;
+}
+
+.title-section {
+  font-size: 20px;
+}
+
+.size-list {
+  display: flex;
+  min-height: 38px;
+}
+
+.size-list__item {
+  border: 1px solid #dddddd;
+  display: flex;
+  align-items: center;
+  min-width: 38px;
+  justify-content: center;
+  font-weight: bold;
+  transition: .1s;
+}
+
+.size-list__item ~ .size-list__item {
+  border-left: 0;
+}
+
+.size-list input[type="radio"]:disabled + .size-list__item {
+  background-color: #dddddd;
+  color: #666;
+}
+
+.size-list input[type="radio"]:checked + .size-list__item {
+  background-color: #000;
+  color: #fff;
+}

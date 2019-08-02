@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Outstore - Guia de estilo</title>
-  <link rel="stylesheet" href=".stores/assets/css/outstore.css">
+  <link rel="stylesheet" href="./samples/css/outstore.css">
 </head>
 <body>
   <section>
@@ -18,29 +18,30 @@
     </ul>
     <h3 id="section-variables">Variáveis</h3>
     <h4 id="section-varibles-colors">Cores</h4>
-    <div class="sg-ColorBox" data-color="--colorPrimary">
-      --colorPrimary
+    <div class="sg-ColorBox" data-color="--color-primary">
+      --color-primary
     </div>
-    <template>
-      <button class="Button">
-        .Button
-      </button>
-
-      <button class="Button Button--primary">
-        .Button.Button--primary
-      </button>
-    </template>
-    <template>
-      .classe {
-        color: blue;
-      }
-
-      .classe2,
-      tag {
-        padding: 4px;
-        padding: 4px;
-      }
-    </template>
+    <div class="sg-ColorBox" data-color="--color-success">
+      --color-success
+    </div>
+    <div class="sg-ColorBox" data-color="--color-danger">
+      --color-danger
+    </div>
+    <div class="sg-ColorBox" data-color="--color-grayDarker">
+      --color-grayDarker
+    </div>
+    <div class="sg-ColorBox" data-color="--color-grayDark">
+      --color-grayDark
+    </div>
+    <div class="sg-ColorBox" data-color="--color-gray">
+      --color-gray
+    </div>
+    <div class="sg-ColorBox" data-color="--color-grayLight">
+      --color-grayLight
+    </div>
+    <div class="sg-ColorBox" data-color="--color-grayLighter">
+      --color-grayLighter
+    </div>
     <h3 id="section-sets">Sets</h3>
   </section>
   <section class="arz-Section">
@@ -69,6 +70,33 @@
     <h3 class="arz-Section-header2">Form</h3>
     <input class="Input" type="text">
     <h3 class="arz-Section-header2">Buttons</h3>
+    <p>
+      Botões padrões, opacos.
+    </p>
+    <template>
+      <button class="Button">
+        .Button
+      </button>
+
+      <button class="Button Button--primary">
+        .Button.Button--primary
+      </button>
+    </template>
+    <p>
+      Botões transparentes.
+    </p>
+    <template>
+      <button class="Button Button--outline">
+        .Button.Button--outline
+      </button>
+
+      <button class="Button Button--outline Button--primary">
+        .Button.Button--outline.Button--primary
+      </button>
+    </template>
+    <p>
+      Modificadores de tamanho dos botões.
+    </p>
     <button class="Button Button--large">.Button.Button--large</button>
     <button class="Button Button--large" disabled>.Button.Button--large:disabled</button>
     <hr>

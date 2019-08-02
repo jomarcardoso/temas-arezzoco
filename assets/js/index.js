@@ -28,8 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function bindScrollEvents() {
       const anchors = document.querySelectorAll('a[href*="#"]');
       anchors.forEach((anchor) => {
-        console.log(anchor)
         anchor.addEventListener('click', ({ currentTarget: { hash } }) => {
+          console.log(anchor)
           const target = iDocument.querySelector(hash);
           scrollTo(target.offsetTop)
         });
@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function templateNavItem({ tagName, innerHTML, id, offsetTop }) {
-      console.log(id)
       return `
         <li class="sg-Nav-item sg-Nav-item--${tagName}">
           <a href="#${id || ''}" data-scroll="${offsetTop || 0}">
@@ -84,10 +83,12 @@ document.addEventListener('DOMContentLoaded', () => {
         preClass = 'xml';
       }
 
+      const bgColor = el.dataset.color || '';
+
       function renderExample() {
         if (el.dataset.render === 'code') return '';
         if (preClass !== 'xml') return '';
-        return `<div class="sg-Example-content">
+        return `<div class="sg-Example-content" style="background-color: ${bgColor}">
           ${elContent}
         </div>`;
       }

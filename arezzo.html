@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Arezzo - Guia de estilo</title>
+  <link rel="stylesheet" href="./samples/css/arezzo.css">
+</head>
+<body>
+  <h2>Variáveis</h2>
+  <h3>Cores</h3>
+  <div class="sg-ColorBox" data-color="--color-primary">
+    $color-primary
+  </div>
+  <div class="sg-ColorBox" data-color="--color-secondary">
+    $color-secondary
+  </div>
+  <div class="sg-ColorBox" data-color="--color-success">
+    $color-success
+  </div>
+  <div class="sg-ColorBox" data-color="--color-danger">
+    $color-danger
+  </div>
+  <div class="sg-ColorBox" data-color="--color-grayDarker">
+    $color-grayDarker
+  </div>
+  <div class="sg-ColorBox" data-color="--color-grayDark">
+    $color-grayDark
+  </div>
+  <div class="sg-ColorBox" data-color="--color-gray">
+    $color-gray
+  </div>
+  <div class="sg-ColorBox" data-color="--color-grayLight">
+    $color-grayLight
+  </div>
+  <div class="sg-ColorBox" data-color="--color-grayLighter">
+    $color-grayLighter
+  </div>
+  <h2>Componentes - átomos</h2>
+  <h3>Botões</h3>
+  <template>
+    <button class="button" type="button">
+      Botão
+    </button>
+  </template>
+  <template>
+    <button class="button button--small" type="button">
+      Botão pequeno
+    </button>
+  </template>
+  <template>
+    <button class="button button--large" type="button">
+      Botão grande
+    </button>
+  </template>
+  <template>
+    <button class="button button--outline" type="button">
+      Botão transparente
+    </button>
+  </template>
+  <template data-color="#333">
+    <button class="button button--secondary" type="button">
+      Botão secundário
+    </button>
+  </template>
+  <template data-color="#333">
+    <button class="button button--secondary button--outline" type="button">
+      Botão secundário e transparente
+    </button>
+  </template>
+  <template>
+    <button class="button" type="button" disabled>
+      Botão desabilitado
+    </button>
+  </template>
+  <h3>Textos</h3>
+  <strong>Parágrafo</strong>
+  <template>
+    <p class="paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam a dolore placeat facilis sit, odit autem error quod! Voluptates dolore impedit error temporibus harum omnis recusandae neque incidunt eos rerum!
+    </p>
+  </template>
+  <template>
+    <h2 class="title-container">Título de container</h2>
+  </template>
+  <template>
+    <h2 class="title-section">Título de sessão</h2>
+  </template>
+  <h2>Componentes moléculas</h2>
+  <template>
+    <div class="size-list">
+      <input type="radio" name="size-item" value="size-item-33" id="size-item-33" hidden>
+      <label class="size-list__item" for="size-item-33">
+        33
+      </label>
+      <input type="radio" name="size-item" value="size-item-34" id="size-item-34" hidden>
+      <label class="size-list__item" for="size-item-34">
+        34
+      </label>
+      <input type="radio" name="size-item" value="size-item-35" id="size-item-35" hidden>
+      <label class="size-list__item" for="size-item-35">
+        35
+      </label>
+      <input type="radio" name="size-item" value="size-item-36" id="size-item-36" hidden disabled>
+      <label class="size-list__item" for="size-item-36">
+        36
+      </label>
+      <input type="radio" name="size-item" value="size-item-37" id="size-item-37" hidden>
+      <label class="size-list__item" for="size-item-37">
+        37
+      </label>
+    </div>
+  </template>
+</body>
+</html>

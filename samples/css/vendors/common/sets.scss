@@ -1,0 +1,8 @@
+@import 'reset';
+
+button,
+input {
+  &:disabled {
+    cursor: not-allowed;
+  }
+}

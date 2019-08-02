@@ -1,0 +1,13 @@
+:root {
+  /* escala de cinza */
+  --color-grayDarker: #{$color-grayDarker};
+  --color-grayDark: #{$color-grayDark};
+  --color-gray: #{$color-gray};
+  --color-grayLight: #{$color-grayLight};
+  --color-grayLighter: #{$color-grayLighter};
+
+  /* cores do tema */
+  --color-primary: #{$color-primary};
+  --color-success: #{$color-success};
+  --color-danger: #{$color-danger};
+}

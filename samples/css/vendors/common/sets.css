@@ -1,0 +1,10 @@
+/**
+ * resets
+ * source: https://raw.githubusercontent.com/jomarcardoso/jo-CssResets/master/assets/css/resets.css
+ * cdn: https://min.gitcdn.link/
+ */
+@import 'https://min.gitcdn.link/repo/jomarcardoso/jo-CssResets/master/assets/css/resets.css';
+button:disabled,
+input:disabled {
+  cursor: not-allowed;
+}

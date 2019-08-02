@@ -1,6 +1,5 @@
 /* vendors */
 @import './vendors/common/reset.css';
-@import './vendors/components/buttons.css';
 
 /* commons */
 @import './outstore/common/variables.css';

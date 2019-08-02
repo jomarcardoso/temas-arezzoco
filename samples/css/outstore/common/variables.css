@@ -1,0 +1,18 @@
+:root {
+  /* escala de cinza */
+  --color-grayDarker:  hsl(34, 10%, 18%);
+  --color-grayDark: hsl(34, 10%, 28%);
+  --color-gray:  hsl(34, 10%, 72%);
+  --color-grayLight: hsl(34, 10%, 88%);
+  --color-grayLighter: hsl(34, 10%, 96%);
+
+  /* cores do tema */
+  --color-primary: #e74d50;
+  --color-success: #32a500;
+  --color-danger: #ff0000;
+
+  /* apelidos */
+  --color-heading: var(--colorGrayDarker);
+  --color-text: var(--colorGrayDark);
+}
+
