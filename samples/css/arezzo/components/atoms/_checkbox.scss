@@ -1,0 +1,23 @@
+.checkbox {
+  min-width: 16px;
+  min-height: 16px;
+  height: 12px;
+  width: 12px;
+  border: 2px solid $color-grayLight;
+  display: flex;
+  padding: 2px;
+
+  &::before {
+    content: '';
+    flex: 1;
+    transition: background .1s ease;
+  }
+}
+
+.checkbox-input:checked ~ .checkbox::before {
+  background: $color-primary;
+}
+
+.checkbox-input:disabled ~ .checkbox {
+  @extend .is-disabled;
+}

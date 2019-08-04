@@ -59,6 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     arrayIndex.forEach(addClass);
 
     const navLayout = arrayIndex.reduce((previousValue, currentvalue) => {
+      if (currentvalue.tagName === 'H4' || currentvalue.tagName === 'H5' || currentvalue.tagName === 'H6') return previousValue;
       return previousValue.concat(templateNavItem(currentvalue));
     }, '');
 

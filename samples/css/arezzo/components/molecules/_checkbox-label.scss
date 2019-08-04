@@ -1,0 +1,31 @@
+.checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  justify-content: space-between;
+
+  &--rtl {
+    flex-direction: row-reverse;
+  }
+
+  &--rtl .checkbox + .label {
+    margin-right: 10px;
+    margin-left: unset;
+  }
+
+  &--ontop {
+    align-items: flex-start;
+  }
+
+  &#{--ontop} &__icon {
+    margin-top: 2px;
+  }
+
+  .label {
+    margin-left: 10px;
+  }
+
+  .checkbox-input:disabled ~ .label {
+    @extend .is-disabled;
+  }
+}

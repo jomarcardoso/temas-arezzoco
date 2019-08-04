@@ -7,7 +7,6 @@ $color-white: $color-secondary;
   color: $color-white;
   background-color: $color-black;
   height: 42px;
-  width: 100%;
   font-size: 20px;
 
   &--small {
@@ -36,7 +35,6 @@ $color-white: $color-secondary;
   }
 
   &:disabled {
-    background-color: $color-gray;
-    border-color: $color-gray;
+    opacity: .4;
   }
 }

@@ -1,0 +1,14 @@
+.navbar {
+  background-color: $color-grayDarker;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  &__category {
+    padding: 5px;
+    color: $color-secondary;
+    font-size: 12px;
+    font-weight: bold;
+  }
+}

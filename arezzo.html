@@ -74,7 +74,7 @@
     </button>
   </template>
   <h3>Textos</h3>
-  <strong>Parágrafo</strong>
+  <h4>Parágrafo</h4>
   <template>
     <p class="paragraph">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam a dolore placeat facilis sit, odit autem error quod! Voluptates dolore impedit error temporibus harum omnis recusandae neque incidunt eos rerum!
@@ -87,8 +87,9 @@
     <h2 class="title-section">Título de sessão</h2>
   </template>
   <h2>Componentes moléculas</h2>
+  <h3>Lista de tamanhos</h3>
   <template>
-    <div class="size-list">
+    <section class="size-list">
       <input type="radio" name="size-item" value="size-item-33" id="size-item-33" hidden>
       <label class="size-list__item" for="size-item-33">
         33
@@ -109,7 +110,103 @@
       <label class="size-list__item" for="size-item-37">
         37
       </label>
-    </div>
+      <input type="radio" name="size-item" value="size-item-38" id="size-item-38" hidden>
+      <label class="size-list__item" for="size-item-38">
+        38
+      </label>
+      <input type="radio" name="size-item" value="size-item-39" id="size-item-39" hidden>
+      <label class="size-list__item" for="size-item-39">
+        39
+      </label>
+      <input type="radio" name="size-item" value="size-item-40" id="size-item-40" hidden disabled>
+      <label class="size-list__item" for="size-item-40">
+        40
+      </label>
+    </section>
+  </template>
+  <h3>Informações rápidas</h3>
+  <template>
+    <section class="fast-info-list">
+      <div class="fast-info-list__item">
+        Precisa de ajuda?
+      </div>
+      <div class="fast-info-list__item">
+        Compre na loja
+      </div>
+      <div class="fast-info-list__item fast-info-list__item--phone">
+        <span>
+          Compre pelo telefone <br>
+          <strong>(11) 2388 8220</strong>
+        </span>
+      </div>
+    </section>
+  </template>
+  <template>
+    <input class="input" type="text">
+  </template>
+  <template>
+    <label class="checkbox-label">
+      <input
+        type="checkbox"
+        class="checkbox-input"
+        hidden
+      />
+      <span class="checkbox"></span>
+      <span class="label">
+        Checkbox
+      </span>
+    </label>
+  </template>
+  <template>
+    <label class="checkbox-label checkbox-label--rtl">
+      <input
+        type="checkbox"
+        class="checkbox-input"
+        hidden
+      />
+      <span class="checkbox"></span>
+      <span class="label">
+        Checbox direita pra esquerda
+      </span>
+    </label>
+  </template>
+  <template>
+    <label class="checkbox-label checkbox-label--ontop">
+      <input
+        type="checkbox"
+        class="checkbox-input"
+        hidden
+      />
+      <span class="checkbox"></span>
+      <span class="label">
+        Checkbox
+        <br>no
+        <br>topo
+      </span>
+    </label>
+  </template>
+  <template>
+    <label class="checkbox-label">
+      <input
+        type="checkbox"
+        class="checkbox-input"
+        hidden
+        disabled
+      />
+      <span class="checkbox"></span>
+      <span class="label">
+        Checkbox desabilitado
+      </span>
+    </label>
+  </template>
+  <h3>Barra de navegação externa</h3>
+  <template>
+    <nav class="navbar">
+      <a class="navbar__category" href="#">NOVIDADES</a>
+      <a class="navbar__category" href="#">SAPATOS</a>
+      <a class="navbar__category" href="#">BOLSAS</a>
+      <a class="navbar__category" href="#">PROMOÇÃO</a>
+    </nav>
   </template>
 </body>
 </html>

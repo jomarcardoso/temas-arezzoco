@@ -1,7 +1,9 @@
-@import 'reset';
+@import 'reset.scss';
 
 button,
 input {
+  width: 100%;
+
   &:disabled {
     cursor: not-allowed;
   }

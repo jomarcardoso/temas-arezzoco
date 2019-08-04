@@ -1,0 +1,22 @@
+.fast-info-list {
+  display: flex;
+  background-color: $color-grayLighter;
+  flex-wrap: wrap;
+  overflow: hidden;
+
+  &__item {
+    flex: 1;
+    min-height: 128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+    padding: 15px;
+    outline: 1px solid $color-grayLight;
+
+    // & + .fast-info-list__item {
+    //   border-left: 1px solid $color-grayLight;
+    // }
+  }
+}
