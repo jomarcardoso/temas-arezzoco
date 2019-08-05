@@ -1,8 +1,6 @@
 .navbar {
   background-color: $color-grayDarker;
   padding: 5px;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
 
   &__category {

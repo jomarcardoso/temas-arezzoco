@@ -1,0 +1,12 @@
+.quick-form {
+  display: flex;
+
+  .input {
+    flex: 1;
+  }
+
+  .button {
+    height: initial;
+    width: initial;
+  }
+}

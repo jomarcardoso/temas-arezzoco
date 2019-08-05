@@ -1,0 +1,10 @@
+.social-buttons {
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    height: 45px;
+    width: 45px;
+    font-size: 25px;
+  }
+}

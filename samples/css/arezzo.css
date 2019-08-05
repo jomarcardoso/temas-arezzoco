@@ -9,6 +9,8 @@
   display: flex;
   flex-wrap: wrap;
   flex: 1;
+  justify-content: inherit;
+  align-items: inherit;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -264,6 +266,10 @@ input:disabled {
   background-color: #000;
   height: 42px;
   font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 15px;
 }
 
 .button--small {
@@ -300,12 +306,20 @@ input:disabled {
   color: #666;
 }
 
+.title {
+  font-weight: bold;
+}
+
 .title--container {
   font-size: 30px;
 }
 
 .title--section {
   font-size: 20px;
+}
+
+.title--content {
+  margin-bottom: 10px;
 }
 
 .input {
@@ -344,10 +358,6 @@ input:disabled {
   font-weight: bold;
   transition: .1s;
   flex-grow: 1;
-}
-
-.size-list__item ~ .size-list__item {
-  border-left: 0;
 }
 
 .size-list input[type="radio"]:disabled + .size-list__item {
@@ -407,6 +417,30 @@ input:disabled {
   margin-left: 10px;
 }
 
+.social-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-buttons__item {
+  height: 45px;
+  width: 45px;
+  font-size: 25px;
+}
+
+.quick-form {
+  display: flex;
+}
+
+.quick-form .input {
+  flex: 1;
+}
+
+.quick-form .button {
+  height: initial;
+  width: initial;
+}
+
 .footer {
   background-color: #454545;
   color: #dddddd;
@@ -438,8 +472,6 @@ input:disabled {
 .navbar {
   background-color: #323232;
   padding: 5px;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
 }
 

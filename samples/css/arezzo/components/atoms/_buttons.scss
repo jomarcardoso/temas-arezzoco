@@ -8,6 +8,10 @@ $color-white: $color-secondary;
   background-color: $color-black;
   height: 42px;
   font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 15px;
 
   &--small {
     height: 34px;

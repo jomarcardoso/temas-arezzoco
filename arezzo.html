@@ -105,6 +105,13 @@
     </label>
   </template>
   <h2>Componentes moléculas</h2>
+  <h3>Formulário rápido</h3>
+  <template>
+    <form action="post" class="quick-form">
+      <input class="input" type="text">
+      <button class="button button--small">ENVIAR</button>
+    </form>
+  </template>
   <h3>Lista de tamanhos</h3>
   <template>
     <section class="size-list multi-wrap">
@@ -216,11 +223,15 @@
   </template>
   <h3>Barra de navegação externa</h3>
   <template>
-    <nav class="navbar">
-      <a class="navbar__category" href="#">NOVIDADES</a>
-      <a class="navbar__category" href="#">SAPATOS</a>
-      <a class="navbar__category" href="#">BOLSAS</a>
-      <a class="navbar__category" href="#">PROMOÇÃO</a>
+    <nav class="navbar multi-wrap">
+      <div class="multi-wrap">
+        <a class="navbar__category" href="#">NOVIDADES</a>
+        <a class="navbar__category" href="#">SAPATOS</a>
+      </div>
+      <div class="multi-wrap">
+        <a class="navbar__category" href="#">BOLSAS</a>
+        <a class="navbar__category" href="#">PROMOÇÃO</a>
+      </div>
     </nav>
   </template>
   <h2>Componentes - templates</h2>
@@ -240,6 +251,20 @@
         <button class="button">botão</button>
       </div>
     </footer>
+  </template>
+  <h3>Botões de redes sociais</h3>
+  <template>
+    <section class="social-buttons">
+      <a href="#" class="social-buttons__item button">
+        A
+      </a>
+      <a href="#" class="social-buttons__item button">
+        B
+      </a>
+      <a href="#" class="social-buttons__item button">
+        C
+      </a>
+    </section>
   </template>
 </body>
 </html>
