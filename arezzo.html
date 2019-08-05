@@ -81,47 +81,77 @@
     </p>
   </template>
   <template>
-    <h2 class="title-container">Título de container</h2>
+    <h2 class="title title--container">Título de container</h2>
   </template>
   <template>
-    <h2 class="title-section">Título de sessão</h2>
+    <h2 class="title title--section">Título de sessão</h2>
+  </template>
+  <h3>Input</h3>
+  <template>
+    <input class="input" type="text">
+  </template>
+  <h3>Checkbox</h3>
+  <template>
+    <label class="checkbox-label">
+      <input
+        type="checkbox"
+        class="checkbox-input"
+        hidden
+      />
+      <span class="checkbox"></span>
+      <span class="label">
+        Checkbox
+      </span>
+    </label>
   </template>
   <h2>Componentes moléculas</h2>
   <h3>Lista de tamanhos</h3>
   <template>
-    <section class="size-list">
-      <input type="radio" name="size-item" value="size-item-33" id="size-item-33" hidden>
-      <label class="size-list__item" for="size-item-33">
-        33
-      </label>
-      <input type="radio" name="size-item" value="size-item-34" id="size-item-34" hidden>
-      <label class="size-list__item" for="size-item-34">
-        34
-      </label>
-      <input type="radio" name="size-item" value="size-item-35" id="size-item-35" hidden>
-      <label class="size-list__item" for="size-item-35">
-        35
-      </label>
-      <input type="radio" name="size-item" value="size-item-36" id="size-item-36" hidden disabled>
-      <label class="size-list__item" for="size-item-36">
-        36
-      </label>
-      <input type="radio" name="size-item" value="size-item-37" id="size-item-37" hidden>
-      <label class="size-list__item" for="size-item-37">
-        37
-      </label>
-      <input type="radio" name="size-item" value="size-item-38" id="size-item-38" hidden>
-      <label class="size-list__item" for="size-item-38">
-        38
-      </label>
-      <input type="radio" name="size-item" value="size-item-39" id="size-item-39" hidden>
-      <label class="size-list__item" for="size-item-39">
-        39
-      </label>
-      <input type="radio" name="size-item" value="size-item-40" id="size-item-40" hidden disabled>
-      <label class="size-list__item" for="size-item-40">
-        40
-      </label>
+    <section class="size-list multi-wrap">
+      <div class="multi-wrap">
+        <div class="multi-wrap">
+          <input type="radio" name="size-item" value="size-item-33" id="size-item-33" hidden>
+          <label class="size-list__item" for="size-item-33">
+            33
+          </label>
+          <input type="radio" name="size-item" value="size-item-34" id="size-item-34" hidden>
+          <label class="size-list__item" for="size-item-34">
+            34
+          </label>
+        </div>
+        <div class="multi-wrap">
+          <input type="radio" name="size-item" value="size-item-35" id="size-item-35" hidden>
+          <label class="size-list__item" for="size-item-35">
+            35
+          </label>
+          <input type="radio" name="size-item" value="size-item-36" id="size-item-36" hidden disabled>
+          <label class="size-list__item" for="size-item-36">
+            36
+          </label>
+        </div>
+      </div>
+      <div class="multi-wrap">
+        <div class="multi-wrap">
+          <input type="radio" name="size-item" value="size-item-37" id="size-item-37" hidden>
+          <label class="size-list__item" for="size-item-37">
+            37
+          </label>
+          <input type="radio" name="size-item" value="size-item-38" id="size-item-38" hidden>
+          <label class="size-list__item" for="size-item-38">
+            38
+          </label>
+        </div>
+        <div class="multi-wrap">
+          <input type="radio" name="size-item" value="size-item-39" id="size-item-39" hidden>
+          <label class="size-list__item" for="size-item-39">
+            39
+          </label>
+          <input type="radio" name="size-item" value="size-item-40" id="size-item-40" hidden disabled>
+          <label class="size-list__item" for="size-item-40">
+            40
+          </label>
+        </div>
+      </div>
     </section>
   </template>
   <h3>Informações rápidas</h3>
@@ -141,22 +171,7 @@
       </div>
     </section>
   </template>
-  <template>
-    <input class="input" type="text">
-  </template>
-  <template>
-    <label class="checkbox-label">
-      <input
-        type="checkbox"
-        class="checkbox-input"
-        hidden
-      />
-      <span class="checkbox"></span>
-      <span class="label">
-        Checkbox
-      </span>
-    </label>
-  </template>
+  <h3>Checkbox + descrição</h3>
   <template>
     <label class="checkbox-label checkbox-label--rtl">
       <input
@@ -207,6 +222,24 @@
       <a class="navbar__category" href="#">BOLSAS</a>
       <a class="navbar__category" href="#">PROMOÇÃO</a>
     </nav>
+  </template>
+  <h2>Componentes - templates</h2>
+  <h3>Rodapé</h3>
+  <template>
+    <footer class="footer">
+      <div class="footer__section">
+        <h4 class="title">Título 1</h4>
+        conteúdo 1
+      </div>
+      <div class="footer__section">
+        <h4 class="title">Título 2</h4>
+        conteúdo 2
+      </div>
+      <div class="footer__section">
+        <input class="input" type="text">
+        <button class="button">botão</button>
+      </div>
+    </footer>
   </template>
 </body>
 </html>

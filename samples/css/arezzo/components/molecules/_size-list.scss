@@ -1,7 +1,4 @@
 .size-list {
-  display: flex;
-  flex-wrap: wrap;
-
   &__item {
     min-height: 38px;
     border: 1px solid $color-grayLight;

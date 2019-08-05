@@ -1,0 +1,27 @@
+.footer {
+  background-color: $color-grayDark;
+  color: $color-grayLight;
+  padding: 25px;
+
+  &__section {
+    padding-bottom: 25px;
+
+    & + .footer__section {
+      padding-top: 25px;
+      border-top: 2px solid $color-grayDarker;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  .button {
+    background-color: $color-grayDarker;
+  }
+
+  .title,
+  .button {
+    color: $color-grayLighter;
+  }
+}

@@ -5,6 +5,12 @@
   cursor: not-allowed;
 }
 
+.multi-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15;
@@ -252,7 +258,7 @@ input:disabled {
 }
 
 .button {
-  border: 1px solid #000;
+  border: 0;
   cursor: pointer;
   color: #fff;
   background-color: #000;
@@ -278,6 +284,7 @@ input:disabled {
 .button--outline {
   background-color: transparent;
   color: #000;
+  border: 1px solid #000;
 }
 
 .button--outline.button--secondary {
@@ -293,11 +300,11 @@ input:disabled {
   color: #666;
 }
 
-.title-container {
+.title--container {
   font-size: 30px;
 }
 
-.title-section {
+.title--section {
   font-size: 20px;
 }
 
@@ -325,11 +332,6 @@ input:disabled {
 
 .checkbox-input:checked ~ .checkbox::before {
   background: #000;
-}
-
-.size-list {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .size-list__item {
@@ -403,6 +405,34 @@ input:disabled {
 
 .checkbox-label .label {
   margin-left: 10px;
+}
+
+.footer {
+  background-color: #454545;
+  color: #dddddd;
+  padding: 25px;
+}
+
+.footer__section {
+  padding-bottom: 25px;
+}
+
+.footer__section + .footer__section {
+  padding-top: 25px;
+  border-top: 2px solid #323232;
+}
+
+.footer__section:last-child {
+  padding-bottom: 0;
+}
+
+.footer .button {
+  background-color: #323232;
+}
+
+.footer .title,
+.footer .button {
+  color: #ededed;
 }
 
 .navbar {
