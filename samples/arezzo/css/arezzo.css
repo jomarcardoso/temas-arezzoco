@@ -80,6 +80,10 @@ textarea {
   src: url("../../arezzo/fonts/icon-font.eot?#iefix") format("eot"), url("../../arezzo/fonts/icon-font.woff2") format("woff2"), url("../../arezzo/fonts/icon-font.woff") format("woff"), url("../../arezzo/fonts/icon-font.ttf") format("truetype"), url("../../arezzo/fonts/icon-font.svg#icon-font") format("svg");
 }
 
+.icon {
+  max-width: 30px;
+}
+
 .button {
   border: 0;
   cursor: pointer;
