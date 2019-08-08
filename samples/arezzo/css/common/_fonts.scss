@@ -1,0 +1,47 @@
+@font-face {
+  font-family: $font;
+  font-weight: 200;
+  src: url('../../arezzo/fonts/UniversLTStd-LightCn.eot');
+  src:
+    local($font),
+    url('../../arezzo/fonts/UniversLTStd-LightCn.eot?#iefix') format('embedded-opentype'),
+    url('../../arezzo/fonts/UniversLTStd-LightCn.woff2') format('woff2'),
+    url('../../arezzo/fonts/UniversLTStd-LightCn.woff') format('woff'),
+    url('../../arezzo/fonts/UniversLTStd-LightCn.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: $font;
+  font-weight: 400;
+  src: url('../../arezzo/fonts/UniversLTStd-Cn.eot');
+  src:
+    local($font),
+    url('../../arezzo/fonts/UniversLTStd-Cn.eot?#iefix') format('embedded-opentype'),
+    url('../../arezzo/fonts/UniversLTStd-Cn.woff2') format('woff2'),
+    url('../../arezzo/fonts/UniversLTStd-Cn.woff') format('woff'),
+    url('../../arezzo/fonts/UniversLTStd-Cn.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: $font;
+  font-weight: 800;
+  src: url('../../arezzo/fonts/UniversLTStd-BoldCn.eot');
+  src:
+    local($font),
+    url('../../arezzo/fonts/UniversLTStd-BoldCn.eot?#iefix') format('embedded-opentype'),
+    url('../../arezzo/fonts/UniversLTStd-BoldCn.woff2') format('woff2'),
+    url('../../arezzo/fonts/UniversLTStd-BoldCn.woff') format('woff'),
+    url('../../arezzo/fonts/UniversLTStd-BoldCn.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'icon-font';
+  font-display: auto;
+  src: url('../../arezzo/fonts/icon-font.eot');
+  src:
+    url('../../arezzo/fonts/icon-font.eot?#iefix') format('eot'),
+    url('../../arezzo/fonts/icon-font.woff2') format('woff2'),
+    url('../../arezzo/fonts/icon-font.woff') format('woff'),
+    url('../../arezzo/fonts/icon-font.ttf') format('truetype'),
+    url('../../arezzo/fonts/icon-font.svg#icon-font') format('svg');
+}

@@ -1,0 +1,19 @@
+{
+  "name": "samples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "yarn && gulp"
+  },
+  "author": "Jomar Antônio Cardoso",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "jo-cssresets": "^1.0.0"
+  }
+}

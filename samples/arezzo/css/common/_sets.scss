@@ -1,0 +1,17 @@
+@import '../../../css/vendors/common/sets.scss';
+
+::selection {
+  background: $color-grayLight;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  color: $color-gray;
+  line-height: 1.4;
+  font-size: 15px;
+  font-family: $font;
+  font-weight: 200;
+}

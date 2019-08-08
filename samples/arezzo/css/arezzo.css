@@ -1,0 +1,304 @@
+/* escala de cinza */
+/* cores do tema */
+.is-disabled, .checkbox-input:disabled ~ .checkbox, .checkbox-label .checkbox-input:disabled ~ .label {
+  opacity: .4;
+  cursor: not-allowed;
+}
+
+.multi-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: inherit;
+  align-items: inherit;
+}
+
+button,
+input {
+  width: 100%;
+}
+
+button:disabled,
+input:disabled {
+  cursor: not-allowed;
+}
+
+::selection {
+  background: #dddddd;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  color: #666;
+  line-height: 1.4;
+  font-size: 15px;
+  font-family: "UniversLTStd";
+  font-weight: 200;
+}
+
+:root {
+  /* escala de cinza */
+  --color-grayDarker: #323232;
+  --color-grayDark: #454545;
+  --color-gray: #666;
+  --color-grayLight: #dddddd;
+  --color-grayLighter: #ededed;
+  /* cores do tema */
+  --color-primary: #000;
+  --color-success: #4C831B;
+  --color-danger: #E6013C;
+}
+
+@font-face {
+  font-family: "UniversLTStd";
+  font-weight: 200;
+  src: url("../../arezzo/fonts/UniversLTStd-LightCn.eot");
+  src: local("UniversLTStd"), url("../../arezzo/fonts/UniversLTStd-LightCn.eot?#iefix") format("embedded-opentype"), url("../../arezzo/fonts/UniversLTStd-LightCn.woff2") format("woff2"), url("../../arezzo/fonts/UniversLTStd-LightCn.woff") format("woff"), url("../../arezzo/fonts/UniversLTStd-LightCn.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "UniversLTStd";
+  font-weight: 400;
+  src: url("../../arezzo/fonts/UniversLTStd-Cn.eot");
+  src: local("UniversLTStd"), url("../../arezzo/fonts/UniversLTStd-Cn.eot?#iefix") format("embedded-opentype"), url("../../arezzo/fonts/UniversLTStd-Cn.woff2") format("woff2"), url("../../arezzo/fonts/UniversLTStd-Cn.woff") format("woff"), url("../../arezzo/fonts/UniversLTStd-Cn.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "UniversLTStd";
+  font-weight: 800;
+  src: url("../../arezzo/fonts/UniversLTStd-BoldCn.eot");
+  src: local("UniversLTStd"), url("../../arezzo/fonts/UniversLTStd-BoldCn.eot?#iefix") format("embedded-opentype"), url("../../arezzo/fonts/UniversLTStd-BoldCn.woff2") format("woff2"), url("../../arezzo/fonts/UniversLTStd-BoldCn.woff") format("woff"), url("../../arezzo/fonts/UniversLTStd-BoldCn.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'icon-font';
+  font-display: auto;
+  src: url("../../arezzo/fonts/icon-font.eot");
+  src: url("../../arezzo/fonts/icon-font.eot?#iefix") format("eot"), url("../../arezzo/fonts/icon-font.woff2") format("woff2"), url("../../arezzo/fonts/icon-font.woff") format("woff"), url("../../arezzo/fonts/icon-font.ttf") format("truetype"), url("../../arezzo/fonts/icon-font.svg#icon-font") format("svg");
+}
+
+.button {
+  border: 0;
+  cursor: pointer;
+  color: #fff;
+  background-color: #000;
+  height: 42px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 15px;
+}
+
+.button--small {
+  height: 34px;
+  font-size: 16px;
+}
+
+.button--large {
+  font-size: 24px;
+  height: 50px;
+}
+
+.button--secondary {
+  color: #000;
+  background-color: #fff;
+}
+
+.button--outline {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.button--outline.button--secondary {
+  color: #fff;
+  border-color: #fff;
+}
+
+.button:disabled {
+  opacity: .4;
+}
+
+.paragraph {
+  color: #666;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.title--container {
+  font-size: 30px;
+}
+
+.title--section {
+  font-size: 20px;
+}
+
+.title--content {
+  margin-bottom: 10px;
+}
+
+.input {
+  border: 1px solid #dddddd;
+  height: 34px;
+  padding: 0 10px;
+}
+
+.checkbox {
+  min-width: 16px;
+  min-height: 16px;
+  height: 12px;
+  width: 12px;
+  border: 2px solid #dddddd;
+  display: flex;
+  padding: 2px;
+}
+
+.checkbox::before {
+  content: '';
+  flex: 1;
+  transition: background .1s ease;
+}
+
+.checkbox-input:checked ~ .checkbox::before {
+  background: #000;
+}
+
+.size-list__item {
+  min-height: 38px;
+  border: 1px solid #dddddd;
+  display: flex;
+  align-items: center;
+  min-width: 38px;
+  justify-content: center;
+  font-weight: bold;
+  transition: .1s;
+  flex-grow: 1;
+}
+
+.size-list input[type="radio"]:disabled + .size-list__item {
+  background-color: #dddddd;
+  color: #666;
+}
+
+.size-list input[type="radio"]:checked + .size-list__item {
+  background-color: #000;
+  color: #fff;
+}
+
+.fast-info-list {
+  display: flex;
+  background-color: #ededed;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.fast-info-list__item {
+  flex: 1;
+  min-height: 128px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  white-space: nowrap;
+  padding: 15px;
+  outline: 1px solid #dddddd;
+}
+
+.checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  justify-content: space-between;
+}
+
+.checkbox-label--rtl {
+  flex-direction: row-reverse;
+}
+
+.checkbox-label--rtl .checkbox + .label {
+  margin-right: 10px;
+  margin-left: unset;
+}
+
+.checkbox-label--ontop {
+  align-items: flex-start;
+}
+
+.checkbox-label--ontop .checkbox-label__icon {
+  margin-top: 2px;
+}
+
+.checkbox-label .label {
+  margin-left: 10px;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-buttons__item {
+  height: 45px;
+  width: 45px;
+  font-size: 25px;
+}
+
+.quick-form {
+  display: flex;
+}
+
+.quick-form .input {
+  flex: 1;
+}
+
+.quick-form .button {
+  height: initial;
+  width: initial;
+}
+
+.footer {
+  background-color: #454545;
+  color: #dddddd;
+  padding: 25px;
+}
+
+.footer__section {
+  padding-bottom: 25px;
+}
+
+.footer__section + .footer__section {
+  padding-top: 25px;
+  border-top: 2px solid #323232;
+}
+
+.footer__section:last-child {
+  padding-bottom: 0;
+}
+
+.footer .button {
+  background-color: #323232;
+}
+
+.footer .title,
+.footer .button {
+  color: #ededed;
+}
+
+.navbar {
+  background-color: #323232;
+  padding: 5px;
+  justify-content: space-around;
+}
+
+.navbar__category {
+  padding: 5px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+}
