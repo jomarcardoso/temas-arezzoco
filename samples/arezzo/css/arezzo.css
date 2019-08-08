@@ -294,6 +294,15 @@ textarea {
   color: #ededed;
 }
 
+.header {
+  display: flex;
+  background-color: #fff;
+}
+
+.header__menu {
+  flex: 1;
+}
+
 .navbar {
   background-color: #323232;
   padding: 5px;
