@@ -8,6 +8,7 @@
 
 
 // components
+@import 'components/atoms/layout';
 @import 'components/atoms/icons';
 @import 'components/atoms/buttons';
 @import 'components/atoms/texts';
@@ -19,6 +20,7 @@
 @import 'components/molecules/checkbox-label';
 @import 'components/molecules/social-buttons/social-buttons';
 @import 'components/molecules/quick-form/quick-form';
+@import 'components/molecules/product-wrapper/product-wrapper';
 
 @import 'components/templates/footer/footer';
 @import 'components/templates/header/header';

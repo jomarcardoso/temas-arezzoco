@@ -1,6 +1,6 @@
 @font-face {
   font-family: $font;
-  font-weight: 200;
+  font-weight: $fontWeight-light;
   src: url('../../arezzo/fonts/UniversLTStd-LightCn.eot');
   src:
     local($font),
@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: $font;
-  font-weight: 400;
+  font-weight: $fontWeight-normal;
   src: url('../../arezzo/fonts/UniversLTStd-Cn.eot');
   src:
     local($font),
@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: $font;
-  font-weight: 800;
+  font-weight: $fontWeight-bold;
   src: url('../../arezzo/fonts/UniversLTStd-BoldCn.eot');
   src:
     local($font),

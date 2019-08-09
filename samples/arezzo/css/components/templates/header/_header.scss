@@ -1,8 +1,22 @@
 .header {
-  display: flex;
   background-color: $color-secondary;
 
   &__menu {
     flex: 1;
+
+    &--bag {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .icon + .icon {
+      margin-left: 5px;
+    }
+  }
+
+  .container {
+    display: flex;
+    min-height: 45px;
+    align-items: center;
   }
 }

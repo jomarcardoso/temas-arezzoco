@@ -105,6 +105,25 @@
     </label>
   </template>
   <h2>Componentes moléculas</h2>
+  <h3>Caixa de produto</h3>
+  <template data-color="#333">
+    <article class="product-wrapper">
+      <div class="product-wrapper__img">
+        <img src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/hf5/h09/h00/h00/9226407542814/5001700980005U-01-BASEIMAGE-Thumbnail.jpg" alt="">
+      </div>
+      <div class="product-wrapper__details">
+        <h3 class="product-wrapper__name">
+          Mule Mocassino Couro Preto
+        </h3>
+        <p class="product-wrapper__price">
+          R$ 269,90
+        </p>
+        <button class="button button--outline button--small">
+          Comprar
+        </button>
+      </div>
+    </article>
+  </template>
   <h3>Botões de redes sociais</h3>
   <template>
     <section class="social-buttons">
@@ -252,12 +271,15 @@
   <h3>Cabeçalho</h3>
   <template data-color="#333">
     <header class="header">
-      <div class="header__menu">
-        <img class="icon" src="./samples/arezzo/img/icons/menu.svg" alt="">
-      </div>
-      <img class="logo" src="" alt="">
-      <div class="header__menu">
-        <img class="icon" src="./samples/arezzo/img/icons/bag-black.svg" alt="">
+      <div class="container">
+        <div class="header__menu">
+          <img class="icon" src="./samples/arezzo/img/icons/menu.svg" alt="">
+          <img class="icon" src="./samples/arezzo/img/icons/search-black.svg" alt="">
+        </div>
+        <img class="logo" src="./samples/arezzo/img/logo.svg" alt="">
+        <div class="header__menu header__menu--bag">
+          <img class="icon" src="./samples/arezzo/img/icons/bag-black.svg" alt="">
+        </div>
       </div>
     </header>
   </template>

@@ -1,0 +1,35 @@
+.product-wrapper {
+  padding: 20px;
+  text-align: center;
+  background-color: $color-secondary;
+
+  &__details {
+    padding-top: 20px;
+
+    * {
+      & + .product-wrapper__price {
+        margin-top: 5px;
+      }
+
+      & + .button {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  &__img {
+    padding: 0 10px;
+  }
+
+  &__name {
+    margin-top: 10px;
+    font-weight: $fontWeight-normal;
+    font-size: 13px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__price {
+    font-weight: $fontWeight-bold;
+  }
+}

@@ -9,9 +9,8 @@ button,
 input,
 select,
 textarea {
-  color: $color-gray;
   line-height: 1.4;
   font-size: 15px;
   font-family: $font;
-  font-weight: 200;
+  font-weight: $fontWeight-light;
 }
