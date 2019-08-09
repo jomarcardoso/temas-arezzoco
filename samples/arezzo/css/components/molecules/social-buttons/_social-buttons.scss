@@ -2,9 +2,9 @@
   display: flex;
   justify-content: space-between;
 
-  &__item {
+  .button {
     height: 45px;
     width: 45px;
-    font-size: 25px;
+    padding: 6px;
   }
 }

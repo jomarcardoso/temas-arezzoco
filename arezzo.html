@@ -127,14 +127,14 @@
   <h3>Botões de redes sociais</h3>
   <template>
     <section class="social-buttons">
-      <a href="#" class="social-buttons__item button">
-        A
+      <a href="#" class="button">
+        <img src="./samples/arezzo/img/icons/facebook-white.svg" alt="">
       </a>
-      <a href="#" class="social-buttons__item button">
-        B
+      <a href="#" class="button">
+        <img src="./samples/arezzo/img/icons/twitter-white.svg" alt="">
       </a>
-      <a href="#" class="social-buttons__item button">
-        C
+      <a href="#" class="button">
+          <img src="./samples/arezzo/img/icons/instagram-white.svg" alt="">
       </a>
     </section>
   </template>
@@ -290,13 +290,65 @@
         <h4 class="title">Título 1</h4>
         conteúdo 1
       </div>
+      <input class="footer__toggle-control" id="footer__toggle-control" type="checkbox" hidden>
       <div class="footer__section">
-        <h4 class="title">Título 2</h4>
-        conteúdo 2
+        <label for="footer__toggle-control" class="title">
+          Título 2
+        </label>
+        <div class="footer__toggle-content">
+          conteúdo 2
+        </div>
       </div>
-      <div class="footer__section">
-        <input class="input" type="text">
-        <button class="button">botão</button>
+      <div class="footer__toggle-content">
+        <div class="footer__section">
+          <input class="input" type="text">
+          <button class="button">botão</button>
+        </div>
+      </div>
+    </footer>
+  </template>
+  <h2>Templates</h2>
+  <h3>Rodapé</h3>
+  <template>
+    <footer class="footer">
+      <div class="footer__content">
+
+        <div class="footer__section">
+          <section class="social-buttons">
+            <a href="#" class="button">
+              <img src="./samples/arezzo/img/icons/facebook-white.svg" alt="">
+            </a>
+            <a href="#" class="button">
+              <img src="./samples/arezzo/img/icons/twitter-white.svg" alt="">
+            </a>
+            <a href="#" class="button">
+                <img src="./samples/arezzo/img/icons/instagram-white.svg" alt="">
+            </a>
+          </section>
+        </div>
+        <input class="footer__toggle-control" id="footer__toggle-control2" type="checkbox" hidden>
+        <div class="footer__section">
+          <label for="footer__toggle-control2" class="title footer__toggle-label">
+            Mais sobre a Arezzo
+          </label>
+          <div class="footer__toggle-content">
+            conteúdo 2
+          </div>
+        </div>
+        <div class="footer__section footer__toggle-content">
+          <h4 class="title">
+            Fique por dentro das novidades
+          </h4>
+          <p>
+            Informe seu email e receba promoções e todas as novidades do mundo AREZZO!
+          </p>
+          <form action="post" class="quick-form">
+            <input class="input" type="text">
+            <button class="button button--small">CADASTRAR</button>
+          </form>
+        </div>
+        <!-- <div class="footer__toggle-content">
+        </div> -->
       </div>
     </footer>
   </template>

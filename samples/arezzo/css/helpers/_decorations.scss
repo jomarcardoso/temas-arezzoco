@@ -1,0 +1,9 @@
+.arrow-down {
+  display: inline-flex;
+  width: 6px;
+  height: 6px;
+  border: 6px solid $color-primary;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+}
