@@ -21,40 +21,6 @@
     }
   }
 
-  &__toggle-control {
-    &:checked {
-      & ~ .footer__toggle-content {
-        // max-height: 800px;
-        display: block;
-      }
-
-      & ~ {
-        .footer__section {
-          .footer__toggle-content {
-            // max-height: 800px;
-            display: block;
-          }
-        }
-      }
-    }
-  }
-
-  &__toggle-label {
-    &::after {
-      content: '';
-      margin-left: 5px;
-      border-top-color: $color-grayLighter;
-      @extend .arrow-down;
-    }
-  }
-
-  &__toggle-content {
-    // max-height: 0;
-    display: none;
-    overflow: hidden;
-    transition: max-height .2s;
-  }
-
   .button {
     background-color: $color-grayDarker;
   }

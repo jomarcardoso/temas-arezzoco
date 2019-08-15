@@ -1,0 +1,26 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+
+  &__control {
+    &:checked {
+      & ~ .accordion__content,
+      & ~ * .accordion__content {
+        display: block;
+      }
+    }
+  }
+
+  &__label {
+    &::after {
+      content: '';
+      margin-left: 5px;
+      border-top-color: $color-grayLighter;
+      @extend .arrow-down;
+    }
+  }
+
+  &__content {
+    display: none;
+  }
+}
