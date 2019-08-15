@@ -1925,10 +1925,10 @@ isstream@~0.1.2:
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
   integrity sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
 
-jo-cssresets@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/jo-cssresets/-/jo-cssresets-1.1.0.tgz#7f2ef3dd9aa4f2301393ef9535d3652505da6ea0"
-  integrity sha512-NagwRolAC4ZmGStp2wUAdQDVW0fw3dkY4xeDnVMVT9DA72+uYCdyVB1lA+JWpBnqnNqx/Ns574y0wDGPr16Nvw==
+jo-cssresets@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/jo-cssresets/-/jo-cssresets-4.0.1.tgz#abe4f518a4825b2f325ed9e47f1953c8c3002cca"
+  integrity sha512-0dT5ptKrEoik4KXeuYsLv2+e6UkL2RfI9ziB6ma4pd+GL9VEqkcybsqCHdr8+bC+7p86TTZckPFnBHL1U8O8Ag==
   dependencies:
     normalize.css "^8.0.1"
 
