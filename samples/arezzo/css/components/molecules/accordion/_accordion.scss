@@ -8,6 +8,15 @@
       & ~ * .accordion__content {
         display: block;
       }
+
+      & ~ .accordion__label,
+      & ~ * .accordion__label {
+        &::after {
+          border-top-color: transparent;
+          border-bottom-color: $color-grayLighter;
+          transform: translateY(-50%);
+        }
+      }
     }
   }
 
