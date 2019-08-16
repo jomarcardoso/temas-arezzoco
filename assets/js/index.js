@@ -90,7 +90,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (el.dataset.render === 'code') return '';
         if (preClass !== 'xml') return '';
         return `<div class="sg-Example-content" style="background-color: ${bgColor}">
-          ${elContent}
+          <div class="sg-Example-wrapper">
+            ${elContent}
+          </div>
         </div>`;
       }
 

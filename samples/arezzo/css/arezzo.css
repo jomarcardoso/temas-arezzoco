@@ -623,7 +623,6 @@ textarea {
 
 .header-menu {
   display: flex;
-  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .header-menu__wrapper {
@@ -631,12 +630,18 @@ textarea {
   display: flex;
 }
 
-.header-menu__content {
+.header-menu__bar {
   border-right: 1px solid #dddddd;
   background-color: #ededed;
   flex: 10;
   padding: 30px;
   max-width: 360px;
+  display: flex;
+}
+
+.header-menu__content {
+  flex: 1;
+  overflow: auto;
 }
 
 .header-menu__overlay {
@@ -679,6 +684,30 @@ textarea {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+}
+
+.header .header-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  transition: .2s;
+  pointer-events: none;
+}
+
+.header .header-menu__wrapper {
+  transform: translateX(-100%);
+  transition: inherit;
+}
+
+.header__menu-control:checked ~ .header-menu {
+  pointer-events: initial;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.header__menu-control:checked ~ .header-menu .header-menu__wrapper {
+  transform: initial;
 }
 
 .footer {

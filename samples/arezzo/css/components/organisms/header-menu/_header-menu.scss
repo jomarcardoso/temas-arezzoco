@@ -1,19 +1,24 @@
 .header-menu {
   display: flex;
-  background-color: rgba(0,0,0,0.7);
 
   &__wrapper {
     flex: 1;
     display: flex;
   }
 
-  &__content {
+  &__bar {
     border-right: 1px solid $color-grayLight;
     background-color: $color-grayLighter;
     flex: 10;
     // transform: translateX(-100%);
     padding: 30px;
     max-width: 360px;
+    display: flex;
+  }
+
+  &__content {
+    flex: 1;
+    overflow: auto;
   }
 
   &__overlay {

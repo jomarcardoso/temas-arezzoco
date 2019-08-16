@@ -1,0 +1,27 @@
+.header {
+  .header-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    transition: .2s;
+    pointer-events: none;
+
+    &__wrapper {
+      transform: translateX(-100%);
+      transition: inherit;
+    }
+  }
+
+  &__menu-control:checked {
+    & ~ .header-menu {
+      pointer-events: initial;
+      background-color: rgba(0,0,0,0.7);
+
+      .header-menu__wrapper {
+        transform: initial;
+      }
+    }
+  }
+}
