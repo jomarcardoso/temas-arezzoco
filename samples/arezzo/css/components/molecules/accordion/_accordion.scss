@@ -13,7 +13,7 @@
       & ~ * .accordion__label {
         &::after {
           border-top-color: transparent;
-          border-bottom-color: $color-grayLighter;
+          border-bottom-color: $color-primary;
           transform: translateY(-50%);
         }
       }
@@ -24,7 +24,7 @@
     &::after {
       content: '';
       margin-left: 5px;
-      border-top-color: $color-grayLighter;
+      border-top-color: $color-primary;
       @extend .arrow-down;
     }
   }

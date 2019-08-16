@@ -1,0 +1,14 @@
+.icon-bag {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  &::before {
+    position: absolute;
+    content: attr(title) '';
+    font-size: 13px;
+    line-height: 21px;
+    font-weight: bold;
+  }
+}

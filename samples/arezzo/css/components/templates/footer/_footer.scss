@@ -38,4 +38,19 @@
   .quick-form {
     margin-top: 25px;
   }
+
+  .accordion {
+    &__label::after {
+      border-top-color: $color-grayLighter;
+    }
+
+    &__control:checked {
+      & ~ .accordion__label,
+      & ~ * .accordion__label {
+        &::after {
+          border-bottom-color: $color-grayLighter;
+        }
+      }
+    }
+  }
 }

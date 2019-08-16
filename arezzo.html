@@ -105,6 +105,16 @@
     </label>
   </template>
   <h2>Componentes moléculas</h2>
+  <h3>Accordion</h3>
+  <template>
+    <article class="accordion">
+      <input type="checkbox" class="accordion__control" id="accordion-ljl" hidden>
+      <label class="accordion__label" for="accordion-ljl">label</label>
+      <div class="accordion__content">
+        content
+      </div>
+    </article>
+  </template>
   <h3>Caixa de produto</h3>
   <template data-color="#333">
     <article class="product-wrapper">
@@ -267,22 +277,117 @@
       </div>
     </nav>
   </template>
-  <h2>Componentes - templates</h2>
-  <h3>Cabeçalho</h3>
+  <h3>Ícone do Sacola</h3>
+  <template>
+    <a class="icon-bag" title="3" href="#">
+      <img class="icon" src="./samples/arezzo/img/icons/bag-black.svg" alt="">
+    </a>
+  </template>
+  <h2>Components - Organismos</h2>
+  <h3>Barra de Cabeçalho</h3>
   <template data-color="#333">
-    <header class="header">
+    <header class="header-bar">
       <div class="container">
-        <div class="header__menu">
-          <img class="icon" src="./samples/arezzo/img/icons/menu.svg" alt="">
-          <img class="icon" src="./samples/arezzo/img/icons/search-black.svg" alt="">
+        <div class="header-bar__menu">
+          <img class="icon" src="./samples/arezzo/img/icons/menu.svg" alt="menu" title="menu">
+          <img class="icon" src="./samples/arezzo/img/icons/search-black.svg" alt="busca" title="busca">
         </div>
-        <img class="logo" src="./samples/arezzo/img/logo.svg" alt="">
-        <div class="header__menu header__menu--bag">
-          <img class="icon" src="./samples/arezzo/img/icons/bag-black.svg" alt="">
+        <a href="#" title="AREZZO">
+          <img class="logo" src="./samples/arezzo/img/logo.svg" alt="AREZZO">
+        </a>
+        <div class="header-bar__menu header-bar__menu--bag">
+          <a class="icon-bag" title="3" href="#">
+            <img class="icon" src="./samples/arezzo/img/icons/bag-black.svg" alt="">
+          </a>
         </div>
       </div>
     </header>
   </template>
+  <h3>Menu de Cabeçalho</h3>
+  <template>
+    <section class="header-menu">
+      <div class="header-menu__wrapper">
+        <div class="header-menu__content">
+          <nav class="header-menu__nav">
+            <div class="accordion">
+              <h3 class="title">
+                NOVIDADES
+              </h3>
+            </div>
+            <article class="accordion">
+              <input type="checkbox" class="accordion__control" id="accoi1" hidden>
+              <label class="accordion__label title" for="accoi1">SAPATOS</label>
+              <div class="accordion__content">
+                <a href="#" class="link-item">VER TODOS</a>
+                <a href="#" class="link-item">ANABELAS</a>
+                <a href="#" class="link-item">BOTAS</a>
+                <a href="#" class="link-item">CHINELOS</a>
+                <a href="#" class="link-item">ESPADRILLES</a>
+                <a href="#" class="link-item">MOCASSINS</a>
+                <a href="#" class="link-item">MULES</a>
+                <a href="#" class="link-item">PEEP TOES</a>
+                <a href="#" class="link-item">PLATAFORMAS</a>
+                <a href="#" class="link-item">RASTEIRAS</a>
+                <a href="#" class="link-item">SANDÁLIAS</a>
+                <a href="#" class="link-item">SCARPINS</a>
+                <a href="#" class="link-item">TÊNIS</a>
+              </div>
+            </article>
+            <article class="accordion">
+              <input type="checkbox" class="accordion__control" id="accoi2" hidden>
+              <label class="accordion__label title" for="accoi2">BOLSAS</label>
+              <div class="accordion__content">
+                <a href="#" class="link-item">VER TODOS</a>
+                <a href="#" class="link-item">SHOPPING</a>
+                <a href="#" class="link-item">TIRACOLO</a>
+                <a href="#" class="link-item">TOTE</a>
+                <a href="#" class="link-item">BUCKET</a>
+                <a href="#" class="link-item">MOCHILA</a>
+                <a href="#" class="link-item">SATCHEL</a>
+                <a href="#" class="link-item">CLUTCH</a>
+                <a href="#" class="link-item">MALAS</a>
+                <a href="#" class="link-item">BOWLING</a>
+                <a href="#" class="link-item">CARTEIRAS E NECESSAIRES</a>
+              </div>
+            </article>
+            <article class="accordion">
+              <input type="checkbox" class="accordion__control" id="accoi2" hidden>
+              <label class="accordion__label title" for="accoi2">COLEÇÕES</label>
+              <div class="accordion__content">
+                <a href="#" class="link-item">VER TODOS</a>
+                <a href="#" class="link-item">VERÃO 2020</a>
+                <a href="#" class="link-item">LINHA SOFT</a>
+                <a href="#" class="link-item">PRÉ-VENDA</a>
+                <a href="#" class="link-item">DISNEY</a>
+                <a href="#" class="link-item">SPECIAL OCCASION</a>
+                <a href="#" class="link-item">ESPECIAL NOIVAS</a>
+                <a href="#" class="link-item">CLASSIC</a>
+              </div>
+            </article>
+            <div class="accordion">
+              <h3 class="title">
+                MUNDO AREZZO
+              </h3>
+            </div>
+            <div class="accordion">
+              <h3 class="title">
+                PROMOÇÃO
+              </h3>
+            </div>
+          </nav>
+          <a href="#" class="link-item">MUNDO AREZZO</a>
+          <a href="#" class="link-item">MINHA CONTA</a>
+          <a href="#" class="link-item">ATENDIMENTO</a>
+          <a href="#" class="link-item">LOJA MAIS PRÓXIMA</a>
+        </div>
+        <div class="header-menu__overlay">
+
+        </div>
+      </div>
+    </section>
+  </template>
+  <h2>Componentes - templates</h2>
+  <h3>Cabeçalho</h3>
   <h3>Rodapé</h3>
   <template>
     <footer class="footer">
