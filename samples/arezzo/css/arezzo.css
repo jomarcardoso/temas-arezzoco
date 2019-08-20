@@ -342,7 +342,7 @@ textarea {
 }
 
 .button--small {
-  height: 34px;
+  height: 30px;
   font-size: 16px;
 }
 
@@ -523,7 +523,7 @@ textarea {
 }
 
 .product-wrapper__details {
-  padding-top: 20px;
+  padding-top: 15px;
 }
 
 .product-wrapper__details * + .product-wrapper__price {
@@ -542,7 +542,6 @@ textarea {
   margin-top: 10px;
   font-weight: 400;
   font-size: 13px;
-  white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
@@ -745,13 +744,10 @@ textarea {
   margin-top: 15px;
 }
 
-.shelf {
+.shelf__content {
   display: flex;
   flex-wrap: wrap;
-}
-
-.shelf__content {
-  margin: -20px;
+  margin: -10px 0;
 }
 
 .shelf__floor {
@@ -759,13 +755,13 @@ textarea {
   justify-content: space-around;
   display: flex;
   max-width: 100%;
-  min-width: 480px;
 }
 
 .shelf .product-wrapper {
+  min-width: 142px;
   max-width: 280px;
   flex: 1;
-  margin: 20px;
+  margin: 10px 0;
 }
 
 .header .header-menu {

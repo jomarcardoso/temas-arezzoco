@@ -1,9 +1,10 @@
-.shelf {
-  display: flex;
-  flex-wrap: wrap;
+$margin-vertical-productWrapper: 10px;
 
+.shelf {
   &__content {
-    margin: -20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -#{$margin-vertical-productWrapper} 0;
   }
 
   &__floor {
@@ -11,12 +12,13 @@
     justify-content: space-around;
     display: flex;
     max-width: 100%;
-    min-width: 480px;
+    // min-width: 480px;
   }
 
   .product-wrapper {
+    min-width: 142px;
     max-width: 280px;
     flex: 1;
-    margin: 20px;
+    margin: #{$margin-vertical-productWrapper} 0;
   }
 }
