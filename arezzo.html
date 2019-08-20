@@ -1,10 +1,24 @@
-<html lang="en">
+<html amp lang="pt">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <title>Arezzo - Guia de estilo</title>
   <link rel="stylesheet" href="./samples/arezzo/css/arezzo.css">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "NewsArticle",
+      "headline": "Open-source framework for publishing content",
+      "datePublished": "2015-10-07T12:02:41Z",
+      "image": [
+        "logo.jpg"
+      ]
+    }
+  </script>
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 </head>
 <body>
   <h2>Variáveis</h2>
@@ -303,11 +317,137 @@
       </div>
     </section>
   </template>
-  <h3>Menu de Cabeçalho</h3>
+
+  <h3>Carrossel - AMP</h3>
   <template>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <section class="carousel">
+      <amp-carousel class="carousel__slides" autoplay type="slides" id="carousel-with-preview" on="slideChange:AMP.setState({selected: {slide: event.index}})">
+        <amp-img class="carousel__slide" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/h85/hfa/h00/h00/9236793524254/ARZ19-SOFIA-BANNERMOBILEHOME.jpg"></amp-img>
+        <amp-img class="carousel__slide" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/h76/h33/h00/h00/9236897562654/Viradabestsellersmobile.png"></amp-img>
+        <amp-img class="carousel__slide" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/hc9/h2e/h00/h00/9235520258078/ARZ-20-V-CAMPANHA-FEMININO-640x640px.jpg"></amp-img>
+      </amp-carousel>
+      <div class="carousel__dots">
+        <span [class]="selected.slide == 0 ? 'carousel__dot is-current' : 'carousel__dot'" class="carousel__dot is-current" on="tap:carousel-with-preview.goToSlide(index=0)"></span>
+        <span [class]="selected.slide == 1 ? 'carousel__dot is-current' : 'carousel__dot'" class="carousel__dot" on="tap:carousel-with-preview.goToSlide(index=1)"></span>
+        <span [class]="selected.slide == 2 ? 'carousel__dot is-current' : 'carousel__dot'" class="carousel__dot" on="tap:carousel-with-preview.goToSlide(index=2)"></span>
+      </div>
+    </section>
+  </template>
+
+  <h3>Vitrine</h3>
+  <template>
+    <section class="showcase">
+      <img class="showcase__banner" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/hf4/hc9/h00/h00/9235520978974/A1005503780001-02.png" />
+      <div class="showcase__details">
+        <div class="title title--section">
+          Pra você se apaixonar!
+        </div>
+        <div class="paragraph">
+          Os mais queridinhos da coleção para você atualizar seus looks para a estação!
+        </div>
+      </div>
+    </section>
+  </template>
+  <template>
+    <section class="showcase">
+      <img class="showcase__banner" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/h25/hf1/h00/h00/9232540991518/ARZ20-VERAO-BANNERTRIPLO1-0808.png" />
+      <div class="showcase__details">
+        <div class="title title--section">
+          Retro Fresh
+        </div>
+        <div class="paragraph">
+          As sandálias com fivela e salto bloco dão aquele ar retrô com toda a bossa da estação.
+        </div>
+        <button class="button button--outline button--small" type="button">
+          EU QUERO
+        </button>
+      </div>
+    </section>
+  </template>
+
+  <h3>Prateleira</h3>
+  <template>
+    <section class="shelf">
+      <div class="shelf__content">
+        <div class="shelf__floor">
+          <article class="product-wrapper">
+            <div class="product-wrapper__img">
+              <img src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/hf5/h09/h00/h00/9226407542814/5001700980005U-01-BASEIMAGE-Thumbnail.jpg" alt="">
+            </div>
+            <div class="product-wrapper__details">
+              <h3 class="product-wrapper__name">
+                Mule Mocassino Couro Preto
+              </h3>
+              <p class="product-wrapper__price">
+                R$ 269,90
+              </p>
+              <button class="button button--outline button--small">
+                Comprar
+              </button>
+            </div>
+          </article>
+          <article class="product-wrapper">
+            <div class="product-wrapper__img">
+              <img src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/hf5/h09/h00/h00/9226407542814/5001700980005U-01-BASEIMAGE-Thumbnail.jpg" alt="">
+            </div>
+            <div class="product-wrapper__details">
+              <h3 class="product-wrapper__name">
+                Mule Mocassino Couro Preto
+              </h3>
+              <p class="product-wrapper__price">
+                R$ 269,90
+              </p>
+              <button class="button button--outline button--small">
+                Comprar
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="shelf__floor">
+          <article class="product-wrapper">
+            <div class="product-wrapper__img">
+              <img src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/hf5/h09/h00/h00/9226407542814/5001700980005U-01-BASEIMAGE-Thumbnail.jpg" alt="">
+            </div>
+            <div class="product-wrapper__details">
+              <h3 class="product-wrapper__name">
+                Mule Mocassino Couro Preto
+              </h3>
+              <p class="product-wrapper__price">
+                R$ 269,90
+              </p>
+              <button class="button button--outline button--small">
+                Comprar
+              </button>
+            </div>
+          </article>
+          <article class="product-wrapper">
+            <div class="product-wrapper__img">
+              <img src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/hf5/h09/h00/h00/9226407542814/5001700980005U-01-BASEIMAGE-Thumbnail.jpg" alt="">
+            </div>
+            <div class="product-wrapper__details">
+              <h3 class="product-wrapper__name">
+                Mule Mocassino Couro Preto
+              </h3>
+              <p class="product-wrapper__price">
+                R$ 269,90
+              </p>
+              <button class="button button--outline button--small">
+                Comprar
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </template>
+
+  <h3>Menu de Cabeçalho</h3>
+  <template data-color="#333">
     <section class="header-menu">
       <div class="header-menu__wrapper">
-        <div class="header-menu__bar">
+        <div class="menu">
           <div class="header-menu__content">
             <nav class="header-menu__nav">
               <div class="accordion">
@@ -390,7 +530,7 @@
   </template>
   <h2>Componentes - templates</h2>
   <h3>Cabeçalho</h3>
-  <template>
+  <template data-height="500" data-color="#333">
     <header class="header">
       <input class="header__menu-control" type="checkbox" id="toggle-menu2" hidden>
       <section class="header-bar">
@@ -413,7 +553,7 @@
       </section>
       <section class="header-menu">
         <div class="header-menu__wrapper">
-          <div class="header-menu__bar">
+          <div class="menu">
             <div class="header-menu__content">
               <nav class="header-menu__nav">
                 <div class="accordion">

@@ -1,0 +1,3 @@
+@function getFontWithoutFallback($font) {
+  @return nth($font, 1);
+}

@@ -231,11 +231,6 @@ img, textarea, input:not([type='checkbox']):not([type='file']):not([type='radio'
 }
 
 /*# sourceMappingURL=maps/sets.css.map */
-button,
-input {
-  width: 100%;
-}
-
 button:disabled,
 input:disabled {
   cursor: not-allowed;

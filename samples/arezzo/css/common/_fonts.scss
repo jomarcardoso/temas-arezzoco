@@ -1,33 +1,20 @@
 @font-face {
-  font-family: $font;
+  font-family: getFontWithoutFallback($font);
   font-weight: $fontWeight-light;
   src: url('../../arezzo/fonts/UniversLTStd-LightCn.eot');
   src:
-    local($font),
+    local(getFontWithoutFallback($font)),
     url('../../arezzo/fonts/UniversLTStd-LightCn.eot?#iefix') format('embedded-opentype'),
     url('../../arezzo/fonts/UniversLTStd-LightCn.woff2') format('woff2'),
     url('../../arezzo/fonts/UniversLTStd-LightCn.woff') format('woff'),
     url('../../arezzo/fonts/UniversLTStd-LightCn.ttf') format('truetype');
 }
-
 @font-face {
-  font-family: $font;
-  font-weight: $fontWeight-normal;
-  src: url('../../arezzo/fonts/UniversLTStd-Cn.eot');
-  src:
-    local($font),
-    url('../../arezzo/fonts/UniversLTStd-Cn.eot?#iefix') format('embedded-opentype'),
-    url('../../arezzo/fonts/UniversLTStd-Cn.woff2') format('woff2'),
-    url('../../arezzo/fonts/UniversLTStd-Cn.woff') format('woff'),
-    url('../../arezzo/fonts/UniversLTStd-Cn.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: $font;
+  font-family: getFontWithoutFallback($font);
   font-weight: $fontWeight-bold;
   src: url('../../arezzo/fonts/UniversLTStd-BoldCn.eot');
   src:
-    local($font),
+    local(getFontWithoutFallback($font)),
     url('../../arezzo/fonts/UniversLTStd-BoldCn.eot?#iefix') format('embedded-opentype'),
     url('../../arezzo/fonts/UniversLTStd-BoldCn.woff2') format('woff2'),
     url('../../arezzo/fonts/UniversLTStd-BoldCn.woff') format('woff'),

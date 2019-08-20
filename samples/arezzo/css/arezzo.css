@@ -256,10 +256,6 @@ img, textarea, input:not([type='checkbox']):not([type='file']):not([type='radio'
 }
 
 /*# sourceMappingURL=maps/sets.css.map */
-button, input {
-  width: 100%;
-}
-
 button:disabled,
 input:disabled {
   cursor: not-allowed;
@@ -276,7 +272,7 @@ select,
 textarea {
   line-height: 1.4;
   font-size: 15px;
-  font-family: "UniversLTStd";
+  font-family: "UniversLTStd", Arial, Helvetica, sans-serif;
   font-weight: 200;
 }
 
@@ -302,13 +298,6 @@ textarea {
 
 @font-face {
   font-family: "UniversLTStd";
-  font-weight: 400;
-  src: url("../../arezzo/fonts/UniversLTStd-Cn.eot");
-  src: local("UniversLTStd"), url("../../arezzo/fonts/UniversLTStd-Cn.eot?#iefix") format("embedded-opentype"), url("../../arezzo/fonts/UniversLTStd-Cn.woff2") format("woff2"), url("../../arezzo/fonts/UniversLTStd-Cn.woff") format("woff"), url("../../arezzo/fonts/UniversLTStd-Cn.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "UniversLTStd";
   font-weight: 800;
   src: url("../../arezzo/fonts/UniversLTStd-BoldCn.eot");
   src: local("UniversLTStd"), url("../../arezzo/fonts/UniversLTStd-BoldCn.eot?#iefix") format("embedded-opentype"), url("../../arezzo/fonts/UniversLTStd-BoldCn.woff2") format("woff2"), url("../../arezzo/fonts/UniversLTStd-BoldCn.woff") format("woff"), url("../../arezzo/fonts/UniversLTStd-BoldCn.ttf") format("truetype");
@@ -326,6 +315,11 @@ textarea {
   padding-right: 15px;
 }
 
+.menu {
+  background-color: #ededed;
+  padding: 25px;
+}
+
 .icon {
   max-width: 30px;
 }
@@ -341,7 +335,7 @@ textarea {
   background-color: #000;
   height: 42px;
   font-size: 20px;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   padding: 5px 15px;
@@ -550,6 +544,7 @@ textarea {
   font-size: 13px;
   white-space: nowrap;
   text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .product-wrapper__price {
@@ -598,6 +593,51 @@ textarea {
   font-weight: bold;
 }
 
+.carousel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.carousel__slides {
+  flex: 1;
+}
+
+.carousel__slides::before {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+.carousel__dots {
+  position: absolute;
+  display: flex;
+  padding: 10px;
+}
+
+.carousel__dot {
+  padding: 5px;
+}
+
+.carousel__dot:before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border: 1px solid #000;
+  margin: 5px;
+}
+
+.carousel__dot.is-current::before {
+  background-color: #000;
+}
+
+.carousel .amp-carousel-button {
+  display: none;
+}
+
 .header-bar {
   background-color: #fff;
 }
@@ -630,11 +670,9 @@ textarea {
   display: flex;
 }
 
-.header-menu__bar {
+.header-menu .menu {
   border-right: 1px solid #dddddd;
-  background-color: #ededed;
   flex: 10;
-  padding: 30px;
   max-width: 360px;
   display: flex;
 }
@@ -684,6 +722,50 @@ textarea {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+}
+
+.showcase {
+  text-align: center;
+  max-width: 400px;
+}
+
+.showcase__banner {
+  margin-bottom: 30px;
+}
+
+.showcase__details {
+  padding: 0 8%;
+}
+
+.showcase .title {
+  margin-bottom: 15px;
+}
+
+.showcase .button {
+  margin-top: 15px;
+}
+
+.shelf {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shelf__content {
+  margin: -20px;
+}
+
+.shelf__floor {
+  flex: 1;
+  justify-content: space-around;
+  display: flex;
+  max-width: 100%;
+  min-width: 480px;
+}
+
+.shelf .product-wrapper {
+  max-width: 280px;
+  flex: 1;
+  margin: 20px;
 }
 
 .header .header-menu {

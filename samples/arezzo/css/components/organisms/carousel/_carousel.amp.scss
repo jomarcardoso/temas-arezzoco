@@ -1,0 +1,48 @@
+.carousel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  &__slides {
+    flex: 1;
+
+    &::before {
+      content: '';
+      display: block;
+      padding-bottom: 100%;
+    }
+  }
+
+  &__dots {
+    position: absolute;
+    display: flex;
+    padding: 10px;
+  }
+
+  &__dot {
+    padding: 5px;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 10px;
+      height: 10px;
+      background-color: $color-secondary;
+      border: 1px solid $color-primary;
+      margin: 5px;
+    }
+
+    &.is-current {
+      &::before {
+        background-color: $color-primary;
+      }
+    }
+  }
+
+  .amp-carousel-button {
+    display: none;
+  }
+}
+
+

@@ -6,12 +6,9 @@
     display: flex;
   }
 
-  &__bar {
+  .menu {
     border-right: 1px solid $color-grayLight;
-    background-color: $color-grayLighter;
     flex: 10;
-    // transform: translateX(-100%);
-    padding: 30px;
     max-width: 360px;
     display: flex;
   }

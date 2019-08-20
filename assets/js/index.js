@@ -85,12 +85,13 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       const bgColor = el.dataset.color || '';
+      const height = el.dataset.height || '';
 
       function renderExample() {
         if (el.dataset.render === 'code') return '';
         if (preClass !== 'xml') return '';
-        return `<div class="sg-Example-content" style="background-color: ${bgColor}">
-          <div class="sg-Example-wrapper">
+        return `<div class="sg-Example-content" style="background-color: ${bgColor};">
+          <div class="sg-Example-wrapper" style="${height ? `height: ${height}px` : ''}">
             ${elContent}
           </div>
         </div>`;
