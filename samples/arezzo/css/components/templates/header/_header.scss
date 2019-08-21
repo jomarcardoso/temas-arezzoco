@@ -24,4 +24,14 @@
       }
     }
   }
+
+  .search-menu {
+    display: none;
+  }
+
+  &__search-control:checked {
+    & ~ .search-menu {
+      display: block;
+    }
+  }
 }

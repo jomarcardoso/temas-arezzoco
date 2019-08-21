@@ -1,6 +1,8 @@
 $padding-content: 15px;
 
 .search-menu {
+  background-color: $color-secondary;
+
   &__form {
     display: flex;
     border-top: 2px solid $color-grayLight;

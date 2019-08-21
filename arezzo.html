@@ -644,13 +644,16 @@
   <template data-height="500" data-color="#333">
     <header class="header">
       <input class="header__menu-control" type="checkbox" id="toggle-menu2" hidden>
+      <input class="header__search-control" type="checkbox" id="toggle-menu3" hidden>
       <section class="header-bar">
         <div class="container">
           <div class="header-bar__menu">
             <label for="toggle-menu2">
               <img class="icon" src="./samples/arezzo/img/icons/menu.svg" alt="menu" title="menu">
             </label>
-            <img class="icon" src="./samples/arezzo/img/icons/search-black.svg" alt="busca" title="busca">
+            <label for="toggle-menu3">
+              <img class="icon" src="./samples/arezzo/img/icons/search-black.svg" alt="busca" title="busca">
+            </label>
           </div>
           <a href="#" title="AREZZO">
             <img class="logo" src="./samples/arezzo/img/logo.svg" alt="AREZZO">
@@ -660,6 +663,31 @@
               <img class="icon" src="./samples/arezzo/img/icons/bag-black.svg" alt="">
             </a>
           </div>
+        </div>
+      </section>
+      <section class="search-menu">
+        <form action="" class="search-menu__form">
+          <img class="icon icon--mini" src="./samples/arezzo/img/icons/search-black.svg" alt="busca" title="busca">
+          <input class="input" type="text">
+        </form>
+        <div class="search-menu__results">
+          <a class="product-item" href="">
+            <img class="thumbnail" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/h6d/hee/h00/h00/8985884819486/1025200010015U-01-BASEIMAGE-Thumbnail.jpg" />
+            <div class="product-item__details">
+              <h3 class="title">Rasteira Gladiadora Preta</h3>
+              R$ 259.90
+            </div>
+          </a>
+          <a class="product-item" href="">
+            <img class="thumbnail" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/h6d/hee/h00/h00/8985884819486/1025200010015U-01-BASEIMAGE-Thumbnail.jpg"/>
+            <div class="product-item__details">
+              <h3 class="title">Rasteira Gladiadora Preta</h3>
+              R$ 259.90
+            </div>
+          </a>
+          <a class="link" href="">
+            Ver todos resultados
+          </a>
         </div>
       </section>
       <section class="header-menu">
@@ -1129,7 +1157,6 @@
       </div>
     </main>
   </template>
-
 
   <h3>Rodapé</h3>
   <template>

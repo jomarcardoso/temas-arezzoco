@@ -792,6 +792,10 @@ textarea {
   margin: 10px 0;
 }
 
+.search-menu {
+  background-color: #fff;
+}
+
 .search-menu__form {
   display: flex;
   border-top: 2px solid #dddddd;
@@ -856,6 +860,14 @@ textarea {
 
 .header__menu-control:checked ~ .header-menu .header-menu__wrapper {
   transform: initial;
+}
+
+.header .search-menu {
+  display: none;
+}
+
+.header__search-control:checked ~ .search-menu {
+  display: block;
 }
 
 .footer {
