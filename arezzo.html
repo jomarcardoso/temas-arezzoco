@@ -324,9 +324,9 @@
     <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
     <section class="carousel">
       <amp-carousel class="carousel__slides" autoplay type="slides" id="carousel-with-preview" on="slideChange:AMP.setState({selected: {slide: event.index}})">
-        <amp-img class="carousel__slide" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/h85/hfa/h00/h00/9236793524254/ARZ19-SOFIA-BANNERMOBILEHOME.jpg"></amp-img>
-        <amp-img class="carousel__slide" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/h76/h33/h00/h00/9236897562654/Viradabestsellersmobile.png"></amp-img>
-        <amp-img class="carousel__slide" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/hc9/h2e/h00/h00/9235520258078/ARZ-20-V-CAMPANHA-FEMININO-640x640px.jpg"></amp-img>
+        <amp-img class="carousel__slide" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/h85/hfa/h00/h00/9236793524254/ARZ19-SOFIA-BANNERMOBILEHOME.jpg" width="1px" height="1px" layout="responsive"></amp-img>
+        <amp-img class="carousel__slide" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/h76/h33/h00/h00/9236897562654/Viradabestsellersmobile.png" width="1px" height="1px" layout="responsive"></amp-img>
+        <amp-img class="carousel__slide" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/hc9/h2e/h00/h00/9235520258078/ARZ-20-V-CAMPANHA-FEMININO-640x640px.jpg" width="1px" height="1px" layout="responsive"></amp-img>
       </amp-carousel>
       <div class="carousel__dots">
         <span [class]="selected.slide == 0 ? 'carousel__dot is-current' : 'carousel__dot'" class="carousel__dot is-current" on="tap:carousel-with-preview.goToSlide(index=0)"></span>
@@ -338,7 +338,7 @@
 
   <h3>Vitrine</h3>
   <template>
-    <section class="showcase">
+    <section class="showcase section">
       <img class="showcase__banner" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/hf4/hc9/h00/h00/9235520978974/A1005503780001-02.png" />
       <div class="showcase__details">
         <div class="title title--section">
@@ -350,8 +350,9 @@
       </div>
     </section>
   </template>
+
   <template>
-    <section class="showcase">
+    <section class="showcase section">
       <img class="showcase__banner" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/h25/hf1/h00/h00/9232540991518/ARZ20-VERAO-BANNERTRIPLO1-0808.png" />
       <div class="showcase__details">
         <div class="title title--section">
@@ -369,7 +370,7 @@
 
   <h3>Prateleira</h3>
   <template>
-    <section class="shelf">
+    <section class="shelf section">
       <div class="shelf__content">
         <div class="shelf__floor">
           <article class="product-wrapper">
@@ -529,6 +530,7 @@
     </section>
   </template>
   <h2>Componentes - templates</h2>
+
   <h3>Cabeçalho</h3>
   <template data-height="500" data-color="#333">
     <header class="header">
@@ -635,6 +637,391 @@
       </section>
     </header>
   </template>
+
+  <h3>Conteúdo - Página inicial</h3>
+
+  <template>
+    <main class="main-home">
+      <div class="container">
+        <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+        <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+        <section class="carousel section">
+          <amp-carousel class="carousel__slides" autoplay type="slides" id="carousel-with-preview" on="slideChange:AMP.setState({selected: {slide: event.index}})">
+            <amp-img class="carousel__slide" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/h85/hfa/h00/h00/9236793524254/ARZ19-SOFIA-BANNERMOBILEHOME.jpg" width="1px" height="1px" layout="responsive"></amp-img>
+            <amp-img class="carousel__slide" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/h76/h33/h00/h00/9236897562654/Viradabestsellersmobile.png" width="1px" height="1px" layout="responsive"></amp-img>
+            <amp-img class="carousel__slide" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/hc9/h2e/h00/h00/9235520258078/ARZ-20-V-CAMPANHA-FEMININO-640x640px.jpg" width="1px" height="1px" layout="responsive"></amp-img>
+          </amp-carousel>
+          <div class="carousel__dots">
+            <span [class]="selected.slide == 0 ? 'carousel__dot is-current' : 'carousel__dot'" class="carousel__dot is-current" on="tap:carousel-with-preview.goToSlide(index=0)"></span>
+            <span [class]="selected.slide == 1 ? 'carousel__dot is-current' : 'carousel__dot'" class="carousel__dot" on="tap:carousel-with-preview.goToSlide(index=1)"></span>
+            <span [class]="selected.slide == 2 ? 'carousel__dot is-current' : 'carousel__dot'" class="carousel__dot" on="tap:carousel-with-preview.goToSlide(index=2)"></span>
+          </div>
+        </section>
+
+        <section class="showcase section">
+          <img class="showcase__banner" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/hf4/hc9/h00/h00/9235520978974/A1005503780001-02.png" />
+          <div class="showcase__details">
+            <div class="title title--section">
+              Pra você se apaixonar!
+            </div>
+            <div class="paragraph">
+              Os mais queridinhos da coleção para você atualizar seus looks para a estação!
+            </div>
+          </div>
+        </section>
+
+        <section class="shelf section">
+          <div class="shelf__content">
+            <div class="shelf__floor">
+              <article class="product-wrapper">
+                <div class="product-wrapper__img">
+                  <img src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/hf5/h09/h00/h00/9226407542814/5001700980005U-01-BASEIMAGE-Thumbnail.jpg" alt="">
+                </div>
+                <div class="product-wrapper__details">
+                  <h3 class="product-wrapper__name">
+                    Mule Mocassino Couro Preto
+                  </h3>
+                  <p class="product-wrapper__price">
+                    R$ 269,90
+                  </p>
+                  <button class="button button--outline button--small">
+                    Comprar
+                  </button>
+                </div>
+              </article>
+              <article class="product-wrapper">
+                <div class="product-wrapper__img">
+                  <img src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/hf5/h09/h00/h00/9226407542814/5001700980005U-01-BASEIMAGE-Thumbnail.jpg" alt="">
+                </div>
+                <div class="product-wrapper__details">
+                  <h3 class="product-wrapper__name">
+                    Mule Mocassino Couro Preto
+                  </h3>
+                  <p class="product-wrapper__price">
+                    R$ 269,90
+                  </p>
+                  <button class="button button--outline button--small">
+                    Comprar
+                  </button>
+                </div>
+              </article>
+            </div>
+            <div class="shelf__floor">
+              <article class="product-wrapper">
+                <div class="product-wrapper__img">
+                  <img src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/hf5/h09/h00/h00/9226407542814/5001700980005U-01-BASEIMAGE-Thumbnail.jpg" alt="">
+                </div>
+                <div class="product-wrapper__details">
+                  <h3 class="product-wrapper__name">
+                    Mule Mocassino Couro Preto
+                  </h3>
+                  <p class="product-wrapper__price">
+                    R$ 269,90
+                  </p>
+                  <button class="button button--outline button--small">
+                    Comprar
+                  </button>
+                </div>
+              </article>
+              <article class="product-wrapper">
+                <div class="product-wrapper__img">
+                  <img src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/hf5/h09/h00/h00/9226407542814/5001700980005U-01-BASEIMAGE-Thumbnail.jpg" alt="">
+                </div>
+                <div class="product-wrapper__details">
+                  <h3 class="product-wrapper__name">
+                    Mule Mocassino Couro Preto
+                  </h3>
+                  <p class="product-wrapper__price">
+                    R$ 269,90
+                  </p>
+                  <button class="button button--outline button--small">
+                    Comprar
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="showcase section">
+          <img class="showcase__banner" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/h25/hf1/h00/h00/9232540991518/ARZ20-VERAO-BANNERTRIPLO1-0808.png" />
+          <div class="showcase__details">
+            <div class="title title--section">
+              Retro Fresh
+            </div>
+            <div class="paragraph">
+              As sandálias com fivela e salto bloco dão aquele ar retrô com toda a bossa da estação.
+            </div>
+            <button class="button button--outline button--small" type="button">
+              EU QUERO
+            </button>
+          </div>
+        </section>
+
+        <section class="showcase section">
+          <img class="showcase__banner" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/h3c/h8b/h00/h00/9232541777950/ARZ20-INSTA2-VERAO-0808.png"/>
+          <div class="showcase__details">
+            <div class="title title--section">
+              A elegância de Catarina
+            </div>
+            <div class="paragraph">
+              Os shapes funcionais e elegantes fazem da bolsa Catarina a queridinha da temporada.
+            </div>
+            <button class="button button--outline button--small" type="button">
+              EU QUERO
+            </button>
+          </div>
+        </section>
+
+        <section class="showcase section">
+          <img class="showcase__banner" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/hdb/h86/h00/h00/9232542400542/ARZ20-V-INSTA3-0808.png"/>
+          <div class="showcase__details">
+            <div class="title title--section">
+              Lugar ao sol
+            </div>
+            <div class="paragraph">
+              As resinas são o desejo da temporada. Nesta coleção, junto das cores neutras renovam sandálias de salto bloco, em um combo de sofisticação.
+            </div>
+            <button class="button button--outline button--small" type="button">
+              EU QUERO
+            </button>
+          </div>
+        </section>
+
+        <section class="showcase section">
+          <img class="showcase__banner" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/h78/h79/h00/h00/9235521241118/A5001203710002-HO.png" />
+          <div class="showcase__details">
+            <div class="title title--section">
+              Entrando no clima
+            </div>
+            <div class="paragraph">
+              Bolsas em tons terrosos já são statement! Aposte nas tramas, em couros mais soft e arrase!
+            </div>
+          </div>
+        </section>
+
+        <section class="shelf section">
+          <div class="shelf__content">
+            <div class="shelf__floor">
+              <article class="product-wrapper">
+                <div class="product-wrapper__img">
+                  <img src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/hf5/h09/h00/h00/9226407542814/5001700980005U-01-BASEIMAGE-Thumbnail.jpg" alt="">
+                </div>
+                <div class="product-wrapper__details">
+                  <h3 class="product-wrapper__name">
+                    Mule Mocassino Couro Preto
+                  </h3>
+                  <p class="product-wrapper__price">
+                    R$ 269,90
+                  </p>
+                  <button class="button button--outline button--small">
+                    Comprar
+                  </button>
+                </div>
+              </article>
+              <article class="product-wrapper">
+                <div class="product-wrapper__img">
+                  <img src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/hf5/h09/h00/h00/9226407542814/5001700980005U-01-BASEIMAGE-Thumbnail.jpg" alt="">
+                </div>
+                <div class="product-wrapper__details">
+                  <h3 class="product-wrapper__name">
+                    Mule Mocassino Couro Preto
+                  </h3>
+                  <p class="product-wrapper__price">
+                    R$ 269,90
+                  </p>
+                  <button class="button button--outline button--small">
+                    Comprar
+                  </button>
+                </div>
+              </article>
+            </div>
+            <div class="shelf__floor">
+              <article class="product-wrapper">
+                <div class="product-wrapper__img">
+                  <img src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/hf5/h09/h00/h00/9226407542814/5001700980005U-01-BASEIMAGE-Thumbnail.jpg" alt="">
+                </div>
+                <div class="product-wrapper__details">
+                  <h3 class="product-wrapper__name">
+                    Mule Mocassino Couro Preto
+                  </h3>
+                  <p class="product-wrapper__price">
+                    R$ 269,90
+                  </p>
+                  <button class="button button--outline button--small">
+                    Comprar
+                  </button>
+                </div>
+              </article>
+              <article class="product-wrapper">
+                <div class="product-wrapper__img">
+                  <img src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/hf5/h09/h00/h00/9226407542814/5001700980005U-01-BASEIMAGE-Thumbnail.jpg" alt="">
+                </div>
+                <div class="product-wrapper__details">
+                  <h3 class="product-wrapper__name">
+                    Mule Mocassino Couro Preto
+                  </h3>
+                  <p class="product-wrapper__price">
+                    R$ 269,90
+                  </p>
+                  <button class="button button--outline button--small">
+                    Comprar
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="shelf section">
+          <h3 class="title title--section">
+            Queridinhos da Temporada
+          </h3>
+          <div class="shelf__content">
+            <div class="shelf__floor">
+              <article class="product-wrapper">
+                <div class="product-wrapper__img">
+                  <img src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/hf5/h09/h00/h00/9226407542814/5001700980005U-01-BASEIMAGE-Thumbnail.jpg" alt="">
+                </div>
+                <div class="product-wrapper__details">
+                  <h3 class="product-wrapper__name">
+                    Mule Mocassino Couro Preto
+                  </h3>
+                  <p class="product-wrapper__price">
+                    R$ 269,90
+                  </p>
+                  <button class="button button--outline button--small">
+                    Comprar
+                  </button>
+                </div>
+              </article>
+              <article class="product-wrapper">
+                <div class="product-wrapper__img">
+                  <img src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/hf5/h09/h00/h00/9226407542814/5001700980005U-01-BASEIMAGE-Thumbnail.jpg" alt="">
+                </div>
+                <div class="product-wrapper__details">
+                  <h3 class="product-wrapper__name">
+                    Mule Mocassino Couro Preto
+                  </h3>
+                  <p class="product-wrapper__price">
+                    R$ 269,90
+                  </p>
+                  <button class="button button--outline button--small">
+                    Comprar
+                  </button>
+                </div>
+              </article>
+            </div>
+            <div class="shelf__floor">
+              <article class="product-wrapper">
+                <div class="product-wrapper__img">
+                  <img src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/hf5/h09/h00/h00/9226407542814/5001700980005U-01-BASEIMAGE-Thumbnail.jpg" alt="">
+                </div>
+                <div class="product-wrapper__details">
+                  <h3 class="product-wrapper__name">
+                    Mule Mocassino Couro Preto
+                  </h3>
+                  <p class="product-wrapper__price">
+                    R$ 269,90
+                  </p>
+                  <button class="button button--outline button--small">
+                    Comprar
+                  </button>
+                </div>
+              </article>
+              <article class="product-wrapper">
+                <div class="product-wrapper__img">
+                  <img src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/hf5/h09/h00/h00/9226407542814/5001700980005U-01-BASEIMAGE-Thumbnail.jpg" alt="">
+                </div>
+                <div class="product-wrapper__details">
+                  <h3 class="product-wrapper__name">
+                    Mule Mocassino Couro Preto
+                  </h3>
+                  <p class="product-wrapper__price">
+                    R$ 269,90
+                  </p>
+                  <button class="button button--outline button--small">
+                    Comprar
+                  </button>
+                </div>
+              </article>
+            </div>
+            <div class="shelf__floor">
+              <article class="product-wrapper">
+                <div class="product-wrapper__img">
+                  <img src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/hf5/h09/h00/h00/9226407542814/5001700980005U-01-BASEIMAGE-Thumbnail.jpg" alt="">
+                </div>
+                <div class="product-wrapper__details">
+                  <h3 class="product-wrapper__name">
+                    Mule Mocassino Couro Preto
+                  </h3>
+                  <p class="product-wrapper__price">
+                    R$ 269,90
+                  </p>
+                  <button class="button button--outline button--small">
+                    Comprar
+                  </button>
+                </div>
+              </article>
+              <article class="product-wrapper">
+                <div class="product-wrapper__img">
+                  <img src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/hf5/h09/h00/h00/9226407542814/5001700980005U-01-BASEIMAGE-Thumbnail.jpg" alt="">
+                </div>
+                <div class="product-wrapper__details">
+                  <h3 class="product-wrapper__name">
+                    Mule Mocassino Couro Preto
+                  </h3>
+                  <p class="product-wrapper__price">
+                    R$ 269,90
+                  </p>
+                  <button class="button button--outline button--small">
+                    Comprar
+                  </button>
+                </div>
+              </article>
+            </div>
+            <div class="shelf__floor">
+              <article class="product-wrapper">
+                <div class="product-wrapper__img">
+                  <img src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/hf5/h09/h00/h00/9226407542814/5001700980005U-01-BASEIMAGE-Thumbnail.jpg" alt="">
+                </div>
+                <div class="product-wrapper__details">
+                  <h3 class="product-wrapper__name">
+                    Mule Mocassino Couro Preto
+                  </h3>
+                  <p class="product-wrapper__price">
+                    R$ 269,90
+                  </p>
+                  <button class="button button--outline button--small">
+                    Comprar
+                  </button>
+                </div>
+              </article>
+              <article class="product-wrapper">
+                <div class="product-wrapper__img">
+                  <img src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/hf5/h09/h00/h00/9226407542814/5001700980005U-01-BASEIMAGE-Thumbnail.jpg" alt="">
+                </div>
+                <div class="product-wrapper__details">
+                  <h3 class="product-wrapper__name">
+                    Mule Mocassino Couro Preto
+                  </h3>
+                  <p class="product-wrapper__price">
+                    R$ 269,90
+                  </p>
+                  <button class="button button--outline button--small">
+                    Comprar
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </template>
+
+
   <h3>Rodapé</h3>
   <template>
     <footer class="footer">

@@ -320,6 +320,10 @@ textarea {
   padding: 25px;
 }
 
+.section {
+  margin: 0 auto 40px;
+}
+
 .icon {
   max-width: 30px;
 }
@@ -385,7 +389,8 @@ textarea {
 }
 
 .title--section {
-  font-size: 20px;
+  font-size: 24px;
+  margin-bottom: 15px;
 }
 
 .title--content {
@@ -725,7 +730,6 @@ textarea {
 
 .showcase {
   text-align: center;
-  max-width: 400px;
 }
 
 .showcase__banner {
@@ -734,10 +738,6 @@ textarea {
 
 .showcase__details {
   padding: 0 8%;
-}
-
-.showcase .title {
-  margin-bottom: 15px;
 }
 
 .showcase .button {
@@ -762,6 +762,14 @@ textarea {
   max-width: 280px;
   flex: 1;
   margin: 10px 0;
+}
+
+.main-home {
+  text-align: center;
+}
+
+.main-home .showcase {
+  max-width: 400px;
 }
 
 .header .header-menu {
