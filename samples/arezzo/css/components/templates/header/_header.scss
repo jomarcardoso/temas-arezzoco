@@ -29,9 +29,29 @@
     display: none;
   }
 
+  &__search-icon {
+    img {
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+
   &__search-control:checked {
     & ~ .search-menu {
       display: block;
+    }
+
+    & ~ * .header__search-icon {
+      img {
+        &:first-child {
+          display: none;
+        }
+
+        &:nth-child(2) {
+          display: block;
+        }
+      }
     }
   }
 }

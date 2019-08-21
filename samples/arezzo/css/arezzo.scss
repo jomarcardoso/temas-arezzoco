@@ -25,6 +25,7 @@
 @import 'components/molecules/product-wrapper/product-wrapper';
 @import 'components/molecules/accordion/accordion';
 @import 'components/molecules/icon-bag/icon-bag';
+@import 'components/molecules/navbar/navbar.mobile';
 
 @import 'components/organisms/carousel/carousel.amp';
 @import 'components/organisms/header-bar/header-bar';
@@ -33,8 +34,7 @@
 @import 'components/organisms/shelf/shelf';
 @import 'components/organisms/search-menu/search-menu';
 
-@import 'components/templates/main-home/main-home';
 @import 'components/templates/header/header';
 @import 'components/templates/footer/footer';
 
-@import 'components/molecules/navbar/navbar.mobile';
+@import 'components/pages/home/home';

@@ -266,6 +266,10 @@ input:disabled {
   cursor: not-allowed;
 }
 
+label {
+  display: block;
+}
+
 ::selection {
   background: #dddddd;
 }
@@ -331,6 +335,7 @@ textarea {
 
 .icon {
   max-width: 30px;
+  width: 100%;
 }
 
 .icon--mini {
@@ -625,6 +630,19 @@ textarea {
   font-weight: bold;
 }
 
+.navbar {
+  background-color: #323232;
+  padding: 5px;
+  justify-content: space-around;
+}
+
+.navbar__category {
+  padding: 5px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
 .carousel {
   position: relative;
   display: flex;
@@ -676,10 +694,10 @@ textarea {
 
 .header-bar__menu {
   flex: 1;
+  display: flex;
 }
 
 .header-bar__menu--bag {
-  display: flex;
   justify-content: flex-end;
 }
 
@@ -830,14 +848,6 @@ textarea {
   font-weight: bold;
 }
 
-.main-home {
-  text-align: center;
-}
-
-.main-home .showcase {
-  max-width: 400px;
-}
-
 .header .header-menu {
   position: fixed;
   top: 0;
@@ -866,7 +876,19 @@ textarea {
   display: none;
 }
 
+.header__search-icon img:nth-child(2) {
+  display: none;
+}
+
 .header__search-control:checked ~ .search-menu {
+  display: block;
+}
+
+.header__search-control:checked ~ * .header__search-icon img:first-child {
+  display: none;
+}
+
+.header__search-control:checked ~ * .header__search-icon img:nth-child(2) {
   display: block;
 }
 
@@ -916,15 +938,10 @@ textarea {
   border-bottom-color: #ededed;
 }
 
-.navbar {
-  background-color: #323232;
-  padding: 5px;
-  justify-content: space-around;
+.main-home {
+  text-align: center;
 }
 
-.navbar__category {
-  padding: 5px;
-  color: #fff;
-  font-size: 12px;
-  font-weight: bold;
+.main-home .showcase {
+  max-width: 400px;
 }

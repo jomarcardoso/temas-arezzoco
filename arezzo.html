@@ -50,57 +50,81 @@
   <div class="sg-ColorBox" data-color="--color-grayLighter">
     $color-grayLighter
   </div>
+
   <h2>Componentes - átomos</h2>
+
   <h3>Botões</h3>
+
   <template>
     <button class="button" type="button">
       Botão
     </button>
   </template>
+
   <template>
     <button class="button button--small" type="button">
       Botão pequeno
     </button>
   </template>
+
   <template>
     <button class="button button--large" type="button">
       Botão grande
     </button>
   </template>
+
   <template>
     <button class="button button--outline" type="button">
       Botão transparente
     </button>
   </template>
+
   <template data-color="#333">
     <button class="button button--secondary" type="button">
       Botão secundário
     </button>
   </template>
+
   <template data-color="#333">
     <button class="button button--secondary button--outline" type="button">
       Botão secundário e transparente
     </button>
   </template>
+
   <template>
     <button class="button" type="button" disabled>
       Botão desabilitado
     </button>
   </template>
-  <h3>Textos</h3>
-  <h4>Parágrafo</h4>
+
+  <h3>Parágrafo</h3>
+
   <template>
     <p class="paragraph">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam a dolore placeat facilis sit, odit autem error quod! Voluptates dolore impedit error temporibus harum omnis recusandae neque incidunt eos rerum!
     </p>
   </template>
+
+  <h3>Título de container</h3>
+
   <template>
     <h2 class="title title--container">Título de container</h2>
   </template>
+
+  <h3>Título de sessão</h3>
+
   <template>
     <h2 class="title title--section">Título de sessão</h2>
   </template>
+
+  <h3>Link</h3>
+
+  <template>
+    <a class="link" href="#">um link</a>
+  </template>
+
   <h3>Input</h3>
+
   <template>
     <input class="input" type="text">
   </template>
@@ -648,11 +672,12 @@
       <section class="header-bar">
         <div class="container">
           <div class="header-bar__menu">
-            <label for="toggle-menu2">
-              <img class="icon" src="./samples/arezzo/img/icons/menu.svg" alt="menu" title="menu">
+            <label class="icon" for="toggle-menu2">
+              <img src="./samples/arezzo/img/icons/menu.svg" alt="menu" title="menu">
             </label>
-            <label for="toggle-menu3">
-              <img class="icon" src="./samples/arezzo/img/icons/search-black.svg" alt="busca" title="busca">
+            <label class="icon header__search-icon" for="toggle-menu3">
+              <img src="./samples/arezzo/img/icons/search-black.svg" alt="busca" title="busca">
+              <img src="./samples/arezzo/img/icons/close-black.svg" alt="fecha-busca" title="fecha-busca">
             </label>
           </div>
           <a href="#" title="AREZZO">
