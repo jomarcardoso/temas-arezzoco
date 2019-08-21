@@ -1,0 +1,9 @@
+.product-item {
+  display: flex;
+  line-height: 25px;
+  align-items: flex-end;
+
+  .thumbnail {
+    margin-right: 15px;
+  }
+}

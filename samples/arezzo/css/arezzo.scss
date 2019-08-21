@@ -9,13 +9,14 @@
 
 // components
 @import 'components/atoms/layout';
-@import 'components/atoms/icons';
+@import 'components/atoms/images';
 @import 'components/atoms/buttons';
 @import 'components/atoms/texts';
 @import 'components/atoms/input';
 @import 'components/atoms/checkbox';
 @import 'components/atoms/link-item';
 
+@import 'components/molecules/product-item/product-item';
 @import 'components/molecules/size-list';
 @import 'components/molecules/fast-info';
 @import 'components/molecules/checkbox-label';
@@ -30,6 +31,7 @@
 @import 'components/organisms/header-menu/header-menu';
 @import 'components/organisms/showcase/showcase';
 @import 'components/organisms/shelf/shelf';
+@import 'components/organisms/search-menu/search-menu';
 
 @import 'components/templates/main-home/main-home';
 @import 'components/templates/header/header';

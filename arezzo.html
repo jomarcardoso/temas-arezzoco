@@ -104,7 +104,9 @@
   <template>
     <input class="input" type="text">
   </template>
+
   <h3>Checkbox</h3>
+
   <template>
     <label class="checkbox-label">
       <input
@@ -118,8 +120,29 @@
       </span>
     </label>
   </template>
+
+  <h3>Miniatura - AMP</h3>
+
+  <template>
+    <amp-img class="thumbnail" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/h6d/hee/h00/h00/8985884819486/1025200010015U-01-BASEIMAGE-Thumbnail.jpg" width="1px" heigth="1px" layout="responsive"></amp-img>
+  </template>
+
   <h2>Componentes moléculas</h2>
+
+  <h3>Item de lista de produtos - AMP</h3>
+
+  <template>
+    <a class="product-item" href="">
+      <amp-img class="thumbnail" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/h6d/hee/h00/h00/8985884819486/1025200010015U-01-BASEIMAGE-Thumbnail.jpg" width="1px" heigth="1px" layout="responsive"></amp-img>
+      <div class="product-item__details">
+        <h3 class="title">Rasteira Gladiadora Preta</h3>
+        R$ 259.90
+      </div>
+    </a>
+  </template>
+
   <h3>Accordion</h3>
+
   <template>
     <article class="accordion">
       <input type="checkbox" class="accordion__control" id="accordion-ljl" hidden>
@@ -129,7 +152,9 @@
       </div>
     </article>
   </template>
+
   <h3>Caixa de produto</h3>
+
   <template data-color="#333">
     <article class="product-wrapper">
       <div class="product-wrapper__img">
@@ -148,7 +173,9 @@
       </div>
     </article>
   </template>
+
   <h3>Botões de redes sociais</h3>
+
   <template>
     <section class="social-buttons">
       <a href="#" class="button">
@@ -162,14 +189,18 @@
       </a>
     </section>
   </template>
+
   <h3>Formulário rápido</h3>
+
   <template>
     <form action="post" class="quick-form">
       <input class="input" type="text">
       <button class="button button--small">ENVIAR</button>
     </form>
   </template>
+
   <h3>Lista de tamanhos</h3>
+
   <template>
     <section class="size-list multi-wrap">
       <div class="multi-wrap">
@@ -218,7 +249,9 @@
       </div>
     </section>
   </template>
+
   <h3>Informações rápidas</h3>
+
   <template>
     <section class="fast-info-list">
       <div class="fast-info-list__item">
@@ -235,7 +268,9 @@
       </div>
     </section>
   </template>
+
   <h3>Checkbox + descrição</h3>
+
   <template>
     <label class="checkbox-label checkbox-label--rtl">
       <input
@@ -249,6 +284,7 @@
       </span>
     </label>
   </template>
+
   <template>
     <label class="checkbox-label checkbox-label--ontop">
       <input
@@ -264,6 +300,7 @@
       </span>
     </label>
   </template>
+
   <template>
     <label class="checkbox-label">
       <input
@@ -278,7 +315,9 @@
       </span>
     </label>
   </template>
+
   <h3>Barra de navegação externa</h3>
+
   <template>
     <nav class="navbar multi-wrap">
       <div class="multi-wrap">
@@ -291,14 +330,79 @@
       </div>
     </nav>
   </template>
+
   <h3>Ícone do Sacola</h3>
+
   <template>
     <a class="icon-bag" title="3" href="#">
       <img class="icon" src="./samples/arezzo/img/icons/bag-black.svg" alt="">
     </a>
   </template>
+
   <h2>Components - Organismos</h2>
+
+  <h3>Menu de busca</h3>
+
+  <template>
+    <section class="search-menu">
+      <form action="" class="search-menu__form">
+        <img class="icon icon--mini" src="./samples/arezzo/img/icons/search-black.svg" alt="busca" title="busca">
+        <input class="input" type="text">
+      </form>
+      <div class="search-menu__results">
+        <a class="product-item" href="">
+          <img class="thumbnail" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/h6d/hee/h00/h00/8985884819486/1025200010015U-01-BASEIMAGE-Thumbnail.jpg" />
+          <div class="product-item__details">
+            <h3 class="title">Rasteira Gladiadora Preta</h3>
+            R$ 259.90
+          </div>
+        </a>
+        <a class="product-item" href="">
+          <img class="thumbnail" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/h6d/hee/h00/h00/8985884819486/1025200010015U-01-BASEIMAGE-Thumbnail.jpg"/>
+          <div class="product-item__details">
+            <h3 class="title">Rasteira Gladiadora Preta</h3>
+            R$ 259.90
+          </div>
+        </a>
+        <a class="link" href="">
+          Ver todos resultados
+        </a>
+      </div>
+    </section>
+  </template>
+
+  <h3>Menu de busca - AMP</h3>
+
+  <template>
+    <section class="search-menu">
+      <form action="" class="search-menu__form">
+        <img class="icon icon--mini" src="./samples/arezzo/img/icons/search-black.svg" alt="busca" title="busca">
+        <input class="input" type="text">
+      </form>
+      <div class="search-menu__results">
+        <a class="product-item" href="">
+          <amp-img class="thumbnail" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/h6d/hee/h00/h00/8985884819486/1025200010015U-01-BASEIMAGE-Thumbnail.jpg" width="1px" heigth="1px" layout="responsive"></amp-img>
+          <div class="product-item__details">
+            <h3 class="title">Rasteira Gladiadora Preta</h3>
+            R$ 259.90
+          </div>
+        </a>
+        <a class="product-item" href="">
+          <amp-img class="thumbnail" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/h6d/hee/h00/h00/8985884819486/1025200010015U-01-BASEIMAGE-Thumbnail.jpg" width="1px" heigth="1px" layout="responsive"></amp-img>
+          <div class="product-item__details">
+            <h3 class="title">Rasteira Gladiadora Preta</h3>
+            R$ 259.90
+          </div>
+        </a>
+        <a class="link" href="">
+          Ver todos resultados
+        </a>
+      </div>
+    </section>
+  </template>
+
   <h3>Barra de Cabeçalho</h3>
+
   <template data-color="#333">
     <section class="header-bar">
       <div class="container">
@@ -319,6 +423,7 @@
   </template>
 
   <h3>Carrossel - AMP</h3>
+
   <template>
     <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
     <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
@@ -337,6 +442,7 @@
   </template>
 
   <h3>Vitrine</h3>
+
   <template>
     <section class="showcase section">
       <img class="showcase__banner" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/hf4/hc9/h00/h00/9235520978974/A1005503780001-02.png" />
@@ -369,6 +475,7 @@
   </template>
 
   <h3>Prateleira</h3>
+
   <template>
     <section class="shelf section">
       <div class="shelf__content">
@@ -445,6 +552,7 @@
   </template>
 
   <h3>Menu de Cabeçalho</h3>
+
   <template data-color="#333">
     <section class="header-menu">
       <div class="header-menu__wrapper">
@@ -529,6 +637,7 @@
       </div>
     </section>
   </template>
+
   <h2>Componentes - templates</h2>
 
   <h3>Cabeçalho</h3>

@@ -230,6 +230,11 @@ img, textarea, input:not([type='checkbox']):not([type='file']):not([type='radio'
   }
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
 /*# sourceMappingURL=maps/sets.css.map */
 button:disabled,
 input:disabled {

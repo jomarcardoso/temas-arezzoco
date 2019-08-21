@@ -1,0 +1,37 @@
+$padding-content: 15px;
+
+.search-menu {
+  &__form {
+    display: flex;
+    border-top: 2px solid $color-grayLight;
+    background-color: $color-grayLighter;
+    height: 35px;
+    padding-left: $padding-content;
+  }
+
+  &__results {
+    padding: $padding-content;
+  }
+
+  .product-item {
+    padding: $padding-content 0;
+    border-bottom: 1px solid $color-grayLight;
+
+    &__details {
+      max-width: 200px;
+    }
+  }
+
+  .input {
+    border: 0;
+    background-color: transparent;
+  }
+
+  .link {
+    display: block;
+    text-align: center;
+    margin-top: $padding-content;
+    padding: $padding-content;
+    font-weight: bold;
+  }
+}
