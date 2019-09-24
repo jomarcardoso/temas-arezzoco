@@ -29,26 +29,31 @@
     display: none;
   }
 
-  &__search-icon {
-    img {
-      &:nth-child(2) {
-        display: none;
-      }
+  &__search-icons {
+    position: relative;
+  }
+
+  .header__search-icon {
+    &--close {
+      display: none;
+      // visibility: hidden;
     }
   }
 
   &__search-control:checked {
     & ~ .search-menu {
       display: block;
+      // visibility: initial;
     }
 
-    & ~ * .header__search-icon {
-      img {
-        &:first-child {
+    & ~ * .header__search-icons {
+      .header__search-icon {
+        &--loupe {
           display: none;
+          // visibility: hidden;
         }
 
-        &:nth-child(2) {
+        &--close {
           display: block;
         }
       }

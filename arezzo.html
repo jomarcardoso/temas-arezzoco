@@ -5,22 +5,27 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <title>Arezzo - Guia de estilo</title>
   <link rel="stylesheet" href="./samples/arezzo/css/arezzo.css">
-  <script async src="https://cdn.ampproject.org/v0.js"></script>
+
   <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
-  <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "NewsArticle",
-      "headline": "Open-source framework for publishing content",
-      "datePublished": "2015-10-07T12:02:41Z",
-      "image": [
-        "logo.jpg"
-      ]
-    }
-  </script>
-  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 </head>
 <body>
+  <template>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+      }
+    </script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+  </template>
   <h2>Variáveis</h2>
   <h3>Cores</h3>
   <div class="sg-ColorBox" data-color="--color-primary">
@@ -168,9 +173,9 @@
   <h3>Accordion</h3>
 
   <template>
-    <article class="accordion">
-      <input type="checkbox" class="accordion__control" id="accordion-ljl" hidden>
-      <label class="accordion__label" for="accordion-ljl">label</label>
+    <article class="accordion" data-js="accordion">
+      <input type="checkbox" class="accordion__control" id="accordion-ljl" data-js="accordion-control" hidden>
+      <label class="accordion__label" for="accordion-ljl" role="button" aria-expanded="false" data-js="accordion-label">label</label>
       <div class="accordion__content">
         content
       </div>
@@ -449,10 +454,17 @@
   <h3>Carrossel - AMP</h3>
 
   <template>
-    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
-    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
     <section class="carousel">
-      <amp-carousel class="carousel__slides" autoplay type="slides" id="carousel-with-preview" on="slideChange:AMP.setState({selected: {slide: event.index}})">
+      <amp-carousel
+        class="carousel__slides"
+        autoplay
+        type="slides"
+        id="carousel-with-preview"
+        on="slideChange:AMP.setState({selected: {slide: event.index}})"
+        width="1px"
+        height="1px"
+        layout="responsive"
+      >
         <amp-img class="carousel__slide" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/h85/hfa/h00/h00/9236793524254/ARZ19-SOFIA-BANNERMOBILEHOME.jpg" width="1px" height="1px" layout="responsive"></amp-img>
         <amp-img class="carousel__slide" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/h76/h33/h00/h00/9236897562654/Viradabestsellersmobile.png" width="1px" height="1px" layout="responsive"></amp-img>
         <amp-img class="carousel__slide" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/hc9/h2e/h00/h00/9235520258078/ARZ-20-V-CAMPANHA-FEMININO-640x640px.jpg" width="1px" height="1px" layout="responsive"></amp-img>
@@ -665,6 +677,7 @@
   <h2>Componentes - templates</h2>
 
   <h3>Cabeçalho</h3>
+
   <template data-height="500" data-color="#333">
     <header class="header">
       <input class="header__menu-control" type="checkbox" id="toggle-menu2" hidden>
@@ -675,9 +688,9 @@
             <label class="icon" for="toggle-menu2">
               <img src="./samples/arezzo/img/icons/menu.svg" alt="menu" title="menu">
             </label>
-            <label class="icon header__search-icon" for="toggle-menu3">
-              <img src="./samples/arezzo/img/icons/search-black.svg" alt="busca" title="busca">
-              <img src="./samples/arezzo/img/icons/close-black.svg" alt="fecha-busca" title="fecha-busca">
+            <label class="icon header__search-icons" for="toggle-menu3">
+              <img class="header__search-icon--loupe" src="./samples/arezzo/img/icons/search-black.svg" alt="busca" title="busca">
+              <img class="header__search-icon--close" hidden src="./samples/arezzo/img/icons/close-black.svg" alt="fecha-busca" title="fecha-busca">
             </label>
           </div>
           <a href="#" title="AREZZO">
@@ -1184,6 +1197,7 @@
   </template>
 
   <h3>Rodapé</h3>
+
   <template>
     <footer class="footer">
       <div class="footer__content">

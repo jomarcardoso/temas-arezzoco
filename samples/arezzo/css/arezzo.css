@@ -778,11 +778,8 @@ textarea {
   text-align: center;
 }
 
-.showcase__banner {
-  margin-bottom: 30px;
-}
-
 .showcase__details {
+  margin-top: 30px;
   padding: 0 8%;
 }
 
@@ -876,7 +873,11 @@ textarea {
   display: none;
 }
 
-.header__search-icon img:nth-child(2) {
+.header__search-icons {
+  position: relative;
+}
+
+.header .header__search-icon--close {
   display: none;
 }
 
@@ -884,11 +885,11 @@ textarea {
   display: block;
 }
 
-.header__search-control:checked ~ * .header__search-icon img:first-child {
+.header__search-control:checked ~ * .header__search-icons .header__search-icon--loupe {
   display: none;
 }
 
-.header__search-control:checked ~ * .header__search-icon img:nth-child(2) {
+.header__search-control:checked ~ * .header__search-icons .header__search-icon--close {
   display: block;
 }
 

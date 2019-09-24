@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function makeCodesByTags(el) {
       const elContent = el.innerHTML;
       const padding = elContent.search(/(\S)/) - 1;
-      const trimContent = elContent.replace(/\n\n/gm, '\nHHHHHH\n').replace(new RegExp(`\\n\\s{${padding}}`, 'gm'), '\n').trim().replace(/HHHHHH/gm, '');
+      const trimContent = elContent.replace(/\n\n/gm, '\nHHHHHH\n').replace(new RegExp(`\\n\\s{${padding}}`, 'gm'), '\n').trim().replace(/HHHHHH/gm, '').replace(/=\"\"/g, '');
       let text = trimContent;
 
       let preClass = el.dataset.class || '';
