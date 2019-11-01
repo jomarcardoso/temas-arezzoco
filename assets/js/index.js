@@ -1,3 +1,5 @@
+import { Navigation } from './navigation.js';
+
 document.addEventListener('DOMContentLoaded', () => {
   let iDocument = null;
   let iWindow = null;
@@ -137,6 +139,11 @@ document.addEventListener('DOMContentLoaded', () => {
     iDocument = elStyleGuideWrapper.contentDocument;
     iWindow = elStyleGuideWrapper.contentWindow;
     iBody = iDocument.querySelector('body');
+    Navigation({
+      iDocument,
+      iWindow,
+      iBody
+    });
     addStyleToIframe();
     createNavList();
     createNodesByCodes();

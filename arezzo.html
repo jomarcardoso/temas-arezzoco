@@ -9,23 +9,6 @@
   <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
 </head>
 <body>
-  <template>
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "NewsArticle",
-        "headline": "Open-source framework for publishing content",
-        "datePublished": "2015-10-07T12:02:41Z",
-        "image": [
-          "logo.jpg"
-        ]
-      }
-    </script>
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
-    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
-  </template>
   <h2>Variáveis</h2>
   <h3>Cores</h3>
   <div class="sg-ColorBox" data-color="--color-primary">
@@ -150,19 +133,19 @@
     </label>
   </template>
 
-  <h3>Miniatura - AMP</h3>
+  <h3>Miniatura</h3>
 
   <template>
-    <amp-img class="thumbnail" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/h6d/hee/h00/h00/8985884819486/1025200010015U-01-BASEIMAGE-Thumbnail.jpg" width="1px" heigth="1px" layout="responsive"></amp-img>
+    <img class="thumbnail" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/h6d/hee/h00/h00/8985884819486/1025200010015U-01-BASEIMAGE-Thumbnail.jpg" width="1px" heigth="1px" layout="responsive"></img>
   </template>
 
   <h2>Componentes moléculas</h2>
 
-  <h3>Item de lista de produtos - AMP</h3>
+  <h3>Item de lista de produtos</h3>
 
   <template>
     <a class="product-item" href="">
-      <amp-img class="thumbnail" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/h6d/hee/h00/h00/8985884819486/1025200010015U-01-BASEIMAGE-Thumbnail.jpg" width="1px" heigth="1px" layout="responsive"></amp-img>
+      <img class="thumbnail" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/h6d/hee/h00/h00/8985884819486/1025200010015U-01-BASEIMAGE-Thumbnail.jpg" width="1px" heigth="1px" layout="responsive"></img>
       <div class="product-item__details">
         <h3 class="title">Rasteira Gladiadora Preta</h3>
         R$ 259.90
@@ -388,36 +371,6 @@
         </a>
         <a class="product-item" href="">
           <img class="thumbnail" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/h6d/hee/h00/h00/8985884819486/1025200010015U-01-BASEIMAGE-Thumbnail.jpg"/>
-          <div class="product-item__details">
-            <h3 class="title">Rasteira Gladiadora Preta</h3>
-            R$ 259.90
-          </div>
-        </a>
-        <a class="link" href="">
-          Ver todos resultados
-        </a>
-      </div>
-    </section>
-  </template>
-
-  <h3>Menu de busca - AMP</h3>
-
-  <template>
-    <section class="search-menu">
-      <form action="" class="search-menu__form">
-        <img class="icon icon--mini" src="./samples/arezzo/img/icons/search-black.svg" alt="busca" title="busca">
-        <input class="input" type="text">
-      </form>
-      <div class="search-menu__results">
-        <a class="product-item" href="">
-          <amp-img class="thumbnail" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/h6d/hee/h00/h00/8985884819486/1025200010015U-01-BASEIMAGE-Thumbnail.jpg" width="1px" heigth="1px" layout="responsive"></amp-img>
-          <div class="product-item__details">
-            <h3 class="title">Rasteira Gladiadora Preta</h3>
-            R$ 259.90
-          </div>
-        </a>
-        <a class="product-item" href="">
-          <amp-img class="thumbnail" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/h6d/hee/h00/h00/8985884819486/1025200010015U-01-BASEIMAGE-Thumbnail.jpg" width="1px" heigth="1px" layout="responsive"></amp-img>
           <div class="product-item__details">
             <h3 class="title">Rasteira Gladiadora Preta</h3>
             R$ 259.90
